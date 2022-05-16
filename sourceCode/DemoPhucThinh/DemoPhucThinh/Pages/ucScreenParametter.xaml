@@ -1,0 +1,105 @@
+﻿<UserControl
+             x:Class="DemoPhucThinh.ucScreenParametter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DemoPhucThinh"
+             xmlns:Gauge="clr-namespace:Gauge;assembly=Gauge" 
+            
+                xmlns:Controls="clr-namespace:EasyScada.Wpf.Controls;assembly=EasyScada.Wpf.Controls"
+             mc:Ignorable="d" 
+                Height="1910" Width="3840"
+             d:DesignHeight="1910" d:DesignWidth="3840">
+    <!--<UserControl.Resources>
+        <BitmapImage UriSource="../Images/PumpOn.png" x:Key="pumpOn"></BitmapImage>
+        <BitmapImage UriSource="../Images/PumpOff.png" x:Key="pumpOff"></BitmapImage>
+        <BitmapImage UriSource="../Images/PumpFault.png" x:Key="pumpFault"></BitmapImage>
+    </UserControl.Resources>-->
+
+    <Grid >
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Horizontal">
+                    <Gauge:TempGauge x:Name="gaugeNdNuocMatGieng" Height="800" Width="800"/>
+                    <Gauge:TempGauge x:Name="gaugeNdNuocGiaiNhietMam" Height="800" Width="800"/>
+                    <Gauge:TempGauge x:Name="gaugeNdKhongKhiTrongLo" Width="800" Height="800"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <Gauge:TempGauge x:Name="gaugeNdNuocNhomTrongLo" Height="800" Width="800"/>
+                    <Gauge:TempGauge x:Name="gaugeNdNhomTaiMiengLo" Height="800" Width="800"/>
+                    <Gauge:TempGauge x:Name="gaugeNdNhomTruocKhuon" Height="800" Width="800"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Column="1" Background="LightGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Margin="2" Grid.Row="0" Grid.Column="0" Content="MÁC NHÔM"  FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="DarkGreen"/>
+            <Controls:EasyLabel x:Name="labMacNhom" TagPath="Local Station/Channel1/Device1/MacNhom" Margin="2" Grid.Row="0" Grid.Column="1"  Content="0" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="DarkGreen"/>
+
+            <Label Margin="2" Grid.Row="1" Grid.Column="0" Content="ĐƯỜNG KÍNH (inch)"  FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="DarkGreen"/>
+            <Controls:EasyLabel x:Name="labDuongKinh" TagPath="Local Station/Channel1/Device1/DuongKinh" Margin="2" Grid.Row="1" Grid.Column="2"  Content="0" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="DarkGreen"/>
+
+            <Label Margin="2" Grid.Row="2" Grid.Column="0" Content="ÁP LỰC NƯỚC (bar)"  FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="DarkGreen"/>
+            <Controls:EasyLabel x:Name="labApLucNuoc" TagPath="Local Station/Channel1/Device1/ApLucNuoc" Margin="2" Grid.Row="2" Grid.Column="1"  Content="0" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="DarkGreen"/>
+
+            <Label Margin="2" Grid.Row="3" Grid.Column="0" Content="TỐC ĐỘ CÂY KHUẤY (v/p)"  FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="DarkGreen"/>
+            <Controls:EasyLabel x:Name="labTocDoCayKhuay" TagPath="Local Station/Channel1/Device1/TocDoCayKhuay" Margin="2" Grid.Row="3" Grid.Column="1"  Content="0" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="DarkGreen"/>
+
+            <Label Margin="2" Grid.Row="4" Grid.Column="0" Content="ÁP KHÍ NITO (bar)"  FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Background="DarkGreen"/>
+            <Controls:EasyLabel x:Name="labApKhiNito" TagPath="Local Station/Channel1/Device1/ApKhiNito" Margin="2" Grid.Row="4" Grid.Column="1"  Content="0" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="DarkGreen"/>
+            <!--//////////////////////////////////////////////-->
+            <Label Margin="2" Grid.Row="5" Grid.Column="0" Content="TỐC ĐỘ XUỐNG MÂM (m/p)"  FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Background="DarkGreen"/>
+            <Controls:EasyLabel x:Name="labTocDoXuongMam" TagPath="Local Station/Channel1/Device1/TocDoXuongMam" Margin="2" Grid.Row="5" Grid.Column="1"  Content="0" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="DarkGreen"/>
+
+            <Label Margin="2" Grid.Row="6" Grid.Column="0" Content="CHIỀU DÀI PHÔI (mm)"  FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Background="DarkGreen"/>
+            <Controls:EasyLabel x:Name="labChieuDaiPhoi" TagPath="Local Station/Channel1/Device1/ChieuDaiPhoi" Margin="2" Grid.Row="6" Grid.Column="1"  Content="0" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="DarkGreen"/>
+
+            <Label Margin="2" Grid.Row="7" Grid.Column="0" Content="THỜI GIAN ĐÔNG ĐẶC (s)"  FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Background="DarkGreen"/>
+            <Controls:EasyLabel x:Name="labThoiGianDongDac" TagPath="Local Station/Channel1/Device1/ThoiGianDongDac" Margin="2" Grid.Row="7" Grid.Column="1"  Content="0" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="DarkGreen"/>
+        </Grid>
+    </Grid>
+</UserControl>

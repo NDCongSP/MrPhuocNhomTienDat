@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30E9B1AB-C9CB-4E85-9C87-1CB2C61A0356}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>Gauge</RootNamespace>
+    <AssemblyName>Gauge</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML">
+      <HintPath>..\..\..\..\..\Learn\EasyScada\SourceCode\NewEasyScada\Debug\Toolkit\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\..\..\..\..\Learn\EasyScada\SourceCode\NewEasyScada\Debug\Toolkit\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyScada.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\PT Automation\Easy Driver Server\Toolkit\EasyScada.Core.DLL</HintPath>
+    </Reference>
+    <Reference Include="EasyScada.Winforms.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\PT Automation\Easy Driver Server\Toolkit\EasyScada.Winforms.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat">
+      <HintPath>..\..\..\..\..\Learn\EasyScada\SourceCode\NewEasyScada\Debug\Toolkit\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client">
+      <HintPath>..\..\..\..\..\Learn\EasyScada\SourceCode\NewEasyScada\Debug\Toolkit\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Controls, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Expression.Blend.SDK.WPF.4.0.0\lib\net40\Microsoft.Expression.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Controls.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Expression.Blend.SDK.WPF.4.0.0\lib\net40\Design\Microsoft.Expression.Controls.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Expression.Blend.SDK.WPF.4.0.0\lib\net40\Microsoft.Expression.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Expression.Blend.SDK.WPF.4.0.0\lib\net40\Design\Microsoft.Expression.Drawing.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Effects, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Expression.Blend.SDK.WPF.4.0.0\lib\net40\Microsoft.Expression.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Effects.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Expression.Blend.SDK.WPF.4.0.0\lib\net40\Design\Microsoft.Expression.Effects.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Prototyping.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Expression.Blend.SDK.WPF.4.0.0\lib\net40\Microsoft.Expression.Prototyping.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Prototyping.SketchControls, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Expression.Blend.SDK.WPF.4.0.0\lib\net40\Microsoft.Expression.Prototyping.SketchControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Prototyping.SketchControls.design.v4, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Expression.Blend.SDK.WPF.4.0.0\lib\net40\Design\Microsoft.Expression.Prototyping.SketchControls.design.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SDK.Expression.Blend, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SDK.Expression.Blend.1.0.0\lib\net45\Microsoft.SDK.Expression.Blend.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.Design.Extensibility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.31\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Learn\EasyScada\SourceCode\NewEasyScada\Debug\Toolkit\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Learn\EasyScada\SourceCode\NewEasyScada\Debug\Toolkit\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\..\..\..\..\Learn\EasyScada\SourceCode\NewEasyScada\Debug\Toolkit\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.WindowsForms">
+      <HintPath>..\..\..\..\..\Learn\EasyScada\SourceCode\NewEasyScada\Debug\Toolkit\OxyPlot.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif">
+      <HintPath>..\..\..\..\..\Learn\EasyScada\SourceCode\NewEasyScada\Debug\Toolkit\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EasyButton.xaml.cs">
+      <DependentUpon>EasyButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EasyCountRunTime.xaml.cs">
+      <DependentUpon>EasyCountRunTime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EasyCountRunTimeTotal.xaml.cs">
+      <DependentUpon>EasyCountRunTimeTotal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EasySw2Status.xaml.cs">
+      <DependentUpon>EasySw2Status.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EasyTagValueTotalPerDay.xaml.cs">
+      <DependentUpon>EasyTagValueTotalPerDay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphic\EasyImageStatusGifFR.xaml.cs">
+      <DependentUpon>EasyImageStatusGifFR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphic\EasyImageFR.xaml.cs">
+      <DependentUpon>EasyImageFR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EasyLabelStatus.xaml.cs">
+      <DependentUpon>EasyLabelStatus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EasyMotorFR.xaml.cs">
+      <DependentUpon>EasyMotorFR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EasyProgressBarVertical.xaml.cs">
+      <DependentUpon>EasyProgressBarVertical.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RealTimeTrend\Models\ModelChartSettiings.cs" />
+    <Compile Include="Progressbar\EasyProgressBar.xaml.cs">
+      <DependentUpon>EasyProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EasySw3Status.xaml.cs">
+      <DependentUpon>EasySw3Status.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphic\EasyImageStatus.xaml.cs">
+      <DependentUpon>EasyImageStatus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphic\EasyImageStatusGif.xaml.cs">
+      <DependentUpon>EasyImageStatusGif.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphic\EasyImage.xaml.cs">
+      <DependentUpon>EasyImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgessBarTest.xaml.cs">
+      <DependentUpon>ProgessBarTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RealTimeTrend\easyRealTimeTrend.xaml.cs">
+      <DependentUpon>easyRealTimeTrend.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RealTimeTrend\InotyfyPropertyChanged.cs" />
+    <Compile Include="TempGauge.xaml.cs">
+      <DependentUpon>TempGauge.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="EasyButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EasyCountRunTime.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EasyCountRunTimeTotal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EasySw2Status.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EasyTagValueTotalPerDay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Graphic\EasyImageStatusGifFR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Graphic\EasyImageFR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EasyLabelStatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EasyMotorFR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EasyProgressBarVertical.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Progressbar\EasyProgressBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EasySw3Status.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Graphic\EasyImageStatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Graphic\EasyImageStatusGif.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Graphic\EasyImage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProgessBarTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RealTimeTrend\easyRealTimeTrend.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TempGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\AnhDong.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\3-D Blowdown valve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\AnhDongOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\SelectorSwitchGray.png" />
+    <Resource Include="Image\SelectorSwitchLeftGreen.png" />
+    <Resource Include="Image\SelectorSwitchRightGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\SelectorSwitch4Off.png" />
+    <Resource Include="Image\SelectorSwitch4On.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,64 @@
+﻿<Window x:Class="DemoPhucThinh.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoPhucThinh"
+        mc:Ignorable="d"
+        Title="GIÁM SÁT SẢN XUẤT" Height="1080" Width="1920" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <BitmapImage UriSource="Images/PumpOn.png" x:Key="pumpOn"></BitmapImage>
+        <BitmapImage UriSource="Images/PumpOff.png" x:Key="pumpOff"></BitmapImage>
+        <BitmapImage UriSource="Images/PumpFault.png" x:Key="pumpFault"></BitmapImage>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="DarkGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="533*"/>
+                <ColumnDefinition Width="57*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/Untitled1.png" Stretch="Fill"/>
+            <Label Grid.Column="1" x:Name="labTittle" Content="GIÁM SÁT MÁY ĐÚC PHÔI"  FontSize="60" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Yellow"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" Margin="335,-25,164.333,-25"
+                   Height="200" Width="1100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Image Grid.Column="2" x:Name="imgMinimize" HorizontalAlignment="Left" Height="30" Margin="141,0,0,0" VerticalAlignment="Top" Width="30"
+                   Panel.ZIndex="1" Source="Images/minimize_box_blue.png" PreviewMouseDown="imgMinimize_PreviewMouseDown"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <local:ucParametter x:Name="parametter" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Hidden"></local:ucParametter>
+            <local:ucReport x:Name="frmReport" Visibility="Hidden" ></local:ucReport>
+            <local:ucSettings x:Name="frmSettings" Visibility="Hidden"/>
+            <local:ucScreen1 x:Name="frmScreen1" Visibility="Visible"/>
+            <local:ucSettingsNguong x:Name="frmSettingsNguong" Visibility="Hidden"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Background="Black">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1000"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal">
+                <Label x:Name="labTime" Content="23/03/2021 08:30:25" FontSize="25" FontFamily="Times New Roman" FontWeight="Bold" Foreground="White" Margin="3"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="btnFrmParametter" Content="Thông số" Margin="3" Width="150" FontSize="25" FontWeight="Bold" FontFamily="Times New Roman" Click="btnFrmParametter_Click"/>
+                <Button x:Name="btnFrmSettings" Content="Cài đặt" Margin="3" Width="150" FontSize="25" FontWeight="Bold" FontFamily="Times New Roman" Click="btnFrmSettings_Click"/>
+                <Button x:Name="btnFrmReport" Content="Báo cáo" Margin="3" Width="150" FontSize="25" FontWeight="Bold" FontFamily="Times New Roman" Click="btnFrmReport_Click"/>
+                <Button x:Name="btnCaiDatNguong" Content="Cài đặt ngưỡng" Margin="3" Width="200" FontSize="25" FontWeight="Bold" FontFamily="Times New Roman" Click="btnCaiDatNguong_Click"/>
+                <Button x:Name="btnExit" Content="Thoát" Margin="3" Width="150" FontSize="25" FontWeight="Bold" FontFamily="Times New Roman" Click="btnExit_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

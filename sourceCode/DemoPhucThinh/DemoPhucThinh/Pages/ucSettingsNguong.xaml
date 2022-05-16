@@ -1,0 +1,223 @@
+﻿<UserControl x:Class="DemoPhucThinh.ucSettingsNguong"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DemoPhucThinh"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             Background="{DynamicResource MaterialDesignPaper}"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             mc:Ignorable="d" 
+             Height="880" Width="1920"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border BorderBrush="Black" BorderThickness="2" CornerRadius="2" Margin="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Thông số" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black" Background="Green"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label Grid.Column="1" Content="Min" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black" Background="Green"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label Grid.Column="2" Content="Max" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black" Background="Green"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <!--đường kính-->
+                <Label Grid.Row="1" Content="Đường kính" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtDuongKinhMin" Grid.Row="1" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtDuongKinhMax" Grid.Row="1" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Nhiệt độ nước nhôm trong lò-->
+                <Label Grid.Row="2" Content="NĐ nước nhôm trong lò" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtNDNuocNhomTrongLoMin" Grid.Row="2" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtNDNuocNhomTrongLoMax" Grid.Row="2" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Nhiệt độ nhôm trước khuôn-->
+                <Label Grid.Row="3" Content="NĐ nhôm trước khuôn" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtNDNhomTruocKhuonMin" Grid.Row="3" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtNDNhomTruocKhuonMax" Grid.Row="3" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Nhiệt độ nhôm tai mieng lo-->
+                <Label Grid.Row="4" Content="NĐ nhôm tại miệng lò" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtNDNhomTaiMiengLoMin" Grid.Row="4" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtNDNhomTaiMiengLoMax" Grid.Row="4" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Nhiệt độ nước giải nhiệt mâm-->
+                <Label Grid.Row="5" Content="NĐ nước giải nhiệt mâm" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtNDNuocGiaiNhietMamMin" Grid.Row="5" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtNDNuocGiaiNhietMamMax" Grid.Row="5" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Nhiệt độ nước mặt giếng-->
+                <Label Grid.Row="6" Content="NĐ nước mặt giếng" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtNDNuocMatGiengMin" Grid.Row="6" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtNDNuocMatGiengMax" Grid.Row="6" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Nhiệt độ không khí trong lò-->
+                <Label Grid.Row="7" Content="NĐ không khí trong lò" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtNDKhongKhiTrongLoMin" Grid.Row="7" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtNDKhongKhiTrongLoMax" Grid.Row="7" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Áp lực lước L1-->
+                <Label Grid.Row="8" Content="Áp lực lước L1" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtApLucNuocL1Min" Grid.Row="8" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtApLucNuocL1Max" Grid.Row="8" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+            </Grid>
+        </Border>
+        <Border Grid.Column="1" BorderBrush="Black" BorderThickness="2" CornerRadius="2" Margin="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Thông số" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black" Background="Green"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label Grid.Column="1" Content="Min" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black" Background="Green"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Label Grid.Column="2" Content="Max" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black" Background="Green"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <!--Vận tốc sợi titan-->
+                <Label Grid.Row="1" Content="Vận tốc sợi titan" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtVanTocSoiTitanMin" Grid.Row="1" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtVanTocSoiTitanMax" Grid.Row="1" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Tốc độ cây khuấy-->
+                <Label Grid.Row="2" Content="Tốc độ cây khuấy" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtTocDoCayKhuayMin" Grid.Row="2" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtTocDoCayKhuayMax" Grid.Row="2" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Áp khí Argon-->
+                <Label Grid.Row="3" Content="Áp khí Argon" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtApKhiArgonMin" Grid.Row="3" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtApKhiArgonMax" Grid.Row="3" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Vận tốc xuống mâm-->
+                <Label Grid.Row="4" Content="Vận tốc xuống mâm" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtVanTocXuongMamMin" Grid.Row="4" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtVanTocXuongMamMax" Grid.Row="4" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Chiều dài phôi-->
+                <Label Grid.Row="5" Content="Chiều dài phôi" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtChieuDaiPhoiMin" Grid.Row="5" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtChieuDaiPhoiMax" Grid.Row="5" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Thời gian đông đặc-->
+                <Label Grid.Row="6" Content="Thời gian đông đặc" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtThoiGianDongDacMin" Grid.Row="6" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtThoiGianDongDacMax" Grid.Row="6" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Tần số xuống mâm-->
+                <Label Grid.Row="7" Content="Tần số xuống mâm" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtTanSoXuongMamMin" Grid.Row="7" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtTanSoXuongMamMax" Grid.Row="7" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <!--Tần số bơm nước-->
+                <Label Grid.Row="8" Content="Tần số bơm nước" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtTanSoBomNuocMin" Grid.Row="8" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="txtTanSoBomNuocMax" Grid.Row="8" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
+            </Grid>
+        </Border>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
+            <StackPanel Orientation="Vertical">
+                <Label x:Name="labPath" Content="Click để chọn đường dẫn lưu file excel"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontFamily="Time New Roman" FontSize="25" PreviewMouseDown="labPath_PreviewMouseDown"
+                   Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Label Content="Đường dẫn lưu file excel. Click vào để thay đổi."
+                   HorizontalAlignment="Left" VerticalAlignment="Center"
+                   FontFamily="Time New Roman" FontSize="15" PreviewMouseDown="labPath_PreviewMouseDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label x:Name="labPathImage" Content="Click để chọn đường dẫn lưu ảnh"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontFamily="Time New Roman" FontSize="25" PreviewMouseDown="labPathImage_PreviewMouseDown"
+                   Margin="1" BorderBrush="Black" BorderThickness="1"/>
+                <Label Content="Đường dẫn lưu ảnh. Click vào để thay đổi."
+                   HorizontalAlignment="Left" VerticalAlignment="Center"
+                   FontFamily="Time New Roman" FontSize="15" PreviewMouseDown="labPath_PreviewMouseDown"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnSave" Content="LƯU" 
+                    Width="770" Height="90" Margin="5"
+                    FontFamily="Time New Roman" FontSize="50" FontWeight="Bold"
+                    Click="btnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

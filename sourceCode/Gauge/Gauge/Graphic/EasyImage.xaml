@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Gauge.EasyImage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Gauge"
+             x:Name="host"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="400">
+    <Viewbox>
+        <Grid Height="400" Width="400">
+            <Image x:Name="imgControl" Visibility="Visible" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="{Binding ElementName=host, Path=DefaultSource}">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Effect" Value="{x:Null}"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect x:Name="shadowDC" Color="White" BlurRadius="360" Direction="0" ShadowDepth="0"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+        </Grid>
+    </Viewbox>
+</UserControl>

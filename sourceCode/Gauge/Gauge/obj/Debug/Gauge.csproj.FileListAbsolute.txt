@@ -1,0 +1,528 @@
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Gauge.dll.config
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Gauge.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Gauge.pdb
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\LiveCharts.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.Design.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.Design.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.Design.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.Interactivity.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.SketchControls.design.v4.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.SketchControls.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.SDK.Expression.Blend.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Google.Protobuf.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Zstandard.Net.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Renci.SshNet.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\System.Memory.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\System.Buffers.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\LiveCharts.pdb
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\LiveCharts.xml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.xml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.xml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.xml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\MySql.Data.xml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\EasyLabelStatus.g.cs
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\EasyMotorFR.g.cs
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\EasySw3Status.g.cs
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatus.g.cs
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGif.g.cs
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Graphic\EasyImage.g.cs
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\RealTimeTrend\easyRealTimeTrend.g.cs
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\TempGauge.g.cs
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Gauge_MarkupCompile.cache
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Gauge_MarkupCompile.lref
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\EasyLabelStatus.baml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\EasyMotorFR.baml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\EasySw3Status.baml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatus.baml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGif.baml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Graphic\EasyImage.baml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\RealTimeTrend\easyRealTimeTrend.baml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\TempGauge.baml
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Gauge.g.resources
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Gauge.Properties.Resources.resources
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Gauge.csproj.GenerateResource.cache
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Gauge.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Gauge.csproj.CopyComplete
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Gauge.dll
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Gauge.pdb
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\Gauge.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\EasyButton.g.cs
+C:\Users\Administrator\Documents\Zalo Received Files\Gauge\Gauge\obj\Debug\EasyButton.baml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Gauge.dll.config
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Gauge.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Gauge.pdb
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\LiveCharts.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.Design.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.Design.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.Design.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.Interactivity.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.SketchControls.design.v4.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.SketchControls.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.SDK.Expression.Blend.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Google.Protobuf.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Zstandard.Net.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Renci.SshNet.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\System.Memory.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\System.Buffers.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\LiveCharts.pdb
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\LiveCharts.xml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.xml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.xml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.xml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\MySql.Data.xml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Controls.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Drawing.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Effects.Design.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\EasyButton.g.cs
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\EasyLabelStatus.g.cs
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\EasyMotorFR.g.cs
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\EasySw3Status.g.cs
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatus.g.cs
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGif.g.cs
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Graphic\EasyImage.g.cs
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\RealTimeTrend\easyRealTimeTrend.g.cs
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\TempGauge.g.cs
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Gauge_MarkupCompile.cache
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Gauge_MarkupCompile.lref
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\EasyButton.baml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\EasyLabelStatus.baml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\EasyMotorFR.baml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\EasySw3Status.baml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatus.baml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGif.baml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Graphic\EasyImage.baml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\RealTimeTrend\easyRealTimeTrend.baml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\TempGauge.baml
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Gauge.g.resources
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Gauge.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Gauge.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Gauge.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Gauge.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Gauge.dll
+C:\Users\Administrator\Desktop\Working\DKCNgheAN\Gauge\Gauge\obj\Debug\Gauge.pdb
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Gauge.dll.config
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Gauge.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Gauge.pdb
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\EasyScada.Core.DLL
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\EasyScada.Winforms.Controls.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\LiveCharts.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.Design.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.Design.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.Design.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.Interactivity.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.SketchControls.design.v4.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.SketchControls.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.SDK.Expression.Blend.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\MySql.Data.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Newtonsoft.Json.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\MongoDB.Driver.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\MongoDB.Bson.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\MongoDB.Driver.Core.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\System.Windows.Interactivity.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\MongoDB.Libmongocrypt.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\DnsClient.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\SharpCompress.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\System.Buffers.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\LiveCharts.pdb
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\LiveCharts.xml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.pdb
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.xml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.xml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.xml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.xml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\System.Windows.Interactivity.xml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyButton.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyCountRunTime.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyCountRunTimeTotal.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGifFR.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Graphic\EasyImageFR.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyLabelStatus.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyMotorFR.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyProgressBarVertical.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Progressbar\EasyProgressBar.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasySw3Status.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatus.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGif.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Graphic\EasyImage.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\ProgessBarTest.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\RealTimeTrend\easyRealTimeTrend.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\TempGauge.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Gauge_MarkupCompile.cache
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Gauge_MarkupCompile.lref
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyButton.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyCountRunTime.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyCountRunTimeTotal.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGifFR.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Graphic\EasyImageFR.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyLabelStatus.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyMotorFR.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyProgressBarVertical.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Progressbar\EasyProgressBar.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasySw3Status.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatus.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGif.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Graphic\EasyImage.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\ProgessBarTest.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\RealTimeTrend\easyRealTimeTrend.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\TempGauge.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Gauge.g.resources
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Gauge.Properties.Resources.resources
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Gauge.csproj.GenerateResource.cache
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Gauge.csproj.CoreCompileInputs.cache
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Gauge.csproj.CopyComplete
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Gauge.dll
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\Gauge.pdb
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyTagValueTotalPerDay.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasyTagValueTotalPerDay.baml
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasySw2Status.g.cs
+D:\MyCompany\7.SourceCode\4.ToolsGraphic\Gauge\Gauge\obj\Debug\EasySw2Status.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Gauge.dll.config
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Gauge.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Gauge.pdb
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\LiveCharts.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.Design.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.Design.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.Design.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.Interactivity.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.SketchControls.design.v4.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Prototyping.SketchControls.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.SDK.Expression.Blend.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\MySql.Data.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Newtonsoft.Json.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\System.Windows.Interactivity.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\LiveCharts.pdb
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\LiveCharts.xml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.pdb
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\LiveCharts.Wpf.xml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.xml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.xml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Effects.xml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\System.Windows.Interactivity.xml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Controls.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Drawing.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Effects.Design.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyButton.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyCountRunTime.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyCountRunTimeTotal.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasySw2Status.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyTagValueTotalPerDay.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGifFR.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Graphic\EasyImageFR.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyLabelStatus.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyMotorFR.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyProgressBarVertical.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Progressbar\EasyProgressBar.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasySw3Status.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatus.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGif.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Graphic\EasyImage.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\ProgessBarTest.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\RealTimeTrend\easyRealTimeTrend.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\TempGauge.g.cs
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Gauge_MarkupCompile.cache
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Gauge_MarkupCompile.lref
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyButton.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyCountRunTime.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyCountRunTimeTotal.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasySw2Status.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyTagValueTotalPerDay.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGifFR.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Graphic\EasyImageFR.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyLabelStatus.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyMotorFR.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasyProgressBarVertical.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Progressbar\EasyProgressBar.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\EasySw3Status.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatus.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Graphic\EasyImageStatusGif.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Graphic\EasyImage.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\ProgessBarTest.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\RealTimeTrend\easyRealTimeTrend.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\TempGauge.baml
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Gauge.g.resources
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Gauge.Properties.Resources.resources
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Gauge.csproj.GenerateResource.cache
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Gauge.csproj.CoreCompileInputs.cache
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Gauge.csproj.CopyComplete
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Gauge.dll
+D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\Gauge.pdb

@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="DemoPhucThinh.ucSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DemoPhucThinh"
+             xmlns:controls="clr-namespace:EasyScada.Wpf.Controls;assembly=EasyScada.Wpf.Controls"
+             mc:Ignorable="d"
+             Height="880" Width="1920"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="LightSeaGreen">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Margin="3" Grid.Column="1" Content="NHIỆT ĐỘ NƯỚC MẶT GIẾNG (oC)" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <controls:EasyTextBox x:Name="labNDMatGieng" TagPath="Local Station/Channel1/TNuocMatGieng/Sv" Margin="3" Grid.Column="2"  
+                            Text="0000" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="100" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White" TabIndex="1"/>
+
+        <Label Margin="3" Grid.Row="1" Grid.Column="1" Content="NHIỆT ĐỘ NƯỚC GIẢI NHIỆT MÂM (oC)" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <controls:EasyTextBox x:Name="labNDNuocGiaiNhietMam" TagPath="Local Station/Channel1/TNuocGiaiNhietMam/Sv" Margin="1" Grid.Row="1" Grid.Column="2" 
+                            Text="0000" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="100" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White" TabIndex="2"/>
+
+        <Label Margin="3" Grid.Row="2" Grid.Column="1" Content="NHIỆT ĐỘ KHÔNG KHÍ TRONG LÒ (oC)" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <controls:EasyTextBox x:Name="labNDKhongKhiTrongLo" TagPath="Local Station/Channel1/TKhongKhiTrongLo/Sv" Margin="3" Grid.Row="2" Grid.Column="2"
+                              Text="0000" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="100" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White" TabIndex="3"/>
+
+        <Label Margin="3" Grid.Row="3" Grid.Column="1" Content="NHIỆT ĐỘ NƯỚC NHÔM TRONG LÒ (oC)" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <controls:EasyTextBox x:Name="labNDNuocNhomTrongLo" TagPath="Local Station/Channel1/TNuocNhomTrongLo/Sv" Margin="3" Grid.Row="3" Grid.Column="2"  
+                              Text="0000" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="100" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White" TabIndex="4"/>
+
+        <Label Margin="3" Grid.Row="4" Grid.Column="1" Content="NHIỆT ĐỘ NHÔM TRƯƠC KHUÔN (oC)" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <controls:EasyTextBox x:Name="labNDNhomTaiMiengLo" TagPath="Local Station/Channel1/TNhomTruocKhuon/Sv" Margin="3" Grid.Row="4" Grid.Column="2" 
+                            Text="0000" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="100" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White" TabIndex="5"/>
+
+        <Label Margin="3" Grid.Row="5" Grid.Column="1" Content="NHIỆT ĐỘ NHÔM TẠI MIỆNG LÒ (oC)" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <controls:EasyTextBox x:Name="labNDNhomTruocKhuon" TagPath="Local Station/Channel1/TNhomTaiMiengLo/Sv" Margin="3" Grid.Row="5" Grid.Column="2"  
+                            Text="0000" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="100" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White" TabIndex="6"/>
+
+    </Grid>
+</UserControl>
