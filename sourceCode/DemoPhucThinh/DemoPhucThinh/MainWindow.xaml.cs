@@ -56,9 +56,9 @@ namespace DemoPhucThinh
 
             new UserControl1();
 
-            VariableGlobal.PathFile = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
+            VariableGlobal.PathFile = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
 
-            File.WriteAllText(Path.Combine(VariableGlobal.PathFile, "log.txt"), VariableGlobal.PathFile);
+            //File.WriteAllText(Path.Combine(VariableGlobal.PathFile, "log.txt"), VariableGlobal.PathFile);
 
             using (StreamReader r = new StreamReader(VariableGlobal.PathFile + "/Files/Settings.json"))
             {

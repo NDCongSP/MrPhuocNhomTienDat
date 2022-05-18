@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\MyCompany\8.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\
 DemoPhucThinh
 none
 false
 DEBUG;TRACE
-D:\MyCompany\8.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\DemoPhucThinh\DemoPhucThinh\App.xaml
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\App.xaml
 81655554031
 2-1858815727
 22-1338984602
-31-700716038
+311736904085
 frmLogin.xaml;MainWindow.xaml;Pages\ucParametter.xaml;Pages\ucScreenParametter.xaml;Pages\ucSettings.xaml;Pages\ucReport.xaml;Pages\ucScreen1.xaml;Pages\ucSettingsNguong.xaml;
 
 False
