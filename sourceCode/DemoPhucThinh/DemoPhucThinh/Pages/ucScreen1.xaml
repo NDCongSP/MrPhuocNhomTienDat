@@ -19,34 +19,36 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="1.7*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Margin="3" Grid.Row="0" Grid.Column="0" Content="MÁC NHÔM"  FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red"
+            <Label Margin="3" Grid.Row="0" Grid.Column="2" Content="MÁC NHÔM"  FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="DarkBlue"/>
 
-            <controls:EasyTextBox x:Name="txtMacNhom"  Margin="3" Grid.Row="0" Grid.Column="1" StringFormat="0.00" Text="0000" HorizontalAlignment="Stretch" 
+            <controls:EasyTextBox x:Name="txtMacNhom"  Margin="3" Grid.Row="0" Grid.Column="3" StringFormat="0.00" Text="0000" HorizontalAlignment="Stretch" 
                               HorizontalContentAlignment="Right" TagPath="Local Station/Channel1/Device1/MacNhom" VerticalAlignment="Stretch"
                             VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" 
                               Background="White"/>
 
-            <Label Margin="3" Grid.Row="0" Grid.Column="2" Content="ĐƯỜNG KÍNH (mm)"  FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red"
+            <Label Margin="3" Grid.Row="0" Grid.Column="4" Content="ĐƯỜNG KÍNH (mm)"  FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="DarkBlue"/>
-            <controls:EasyTextBox x:Name="txtDuongKinh" Margin="3" Grid.Row="0" Grid.Column="3" TagPath="Local Station/Channel1/Device1/DuongKinh" Text="0000"
+            <controls:EasyTextBox x:Name="txtDuongKinh" Margin="3" Grid.Row="0" Grid.Column="5" TagPath="Local Station/Channel1/Device1/DuongKinh" Text="0000"
                                   HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" HorizontalContentAlignment="Right"
                             VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
         </Grid>
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="55*"/>
-                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="48*"/>
+                <ColumnDefinition Width="65*"/>
             </Grid.ColumnDefinitions>
 
             <Canvas>
-                <gauge:TempGauge x:Name="gauge1" MaxValue="3" Height="334" Width="356" Canvas.Left="588" Canvas.Top="7"/>
+                <gauge:TempGauge x:Name="gauge1" MaxValue="3" Height="326" Width="348" Canvas.Left="438" Canvas.Top="6"/>
                 <gauge:EasyProgressBar x:Name="progBarChieuDaiPhoi" 
                                         MaxValue="13000" LabelColor="Red" ProgBarlColor="Blue" HorizontalBar="Right" TitleBar="CD PHÔI" 
                                        FontSizeBar="15" HeightBar="500" VisibilityLabel="Visible"
@@ -67,20 +69,20 @@
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
                        Height="28" Width="48" Canvas.Top="756" Panel.ZIndex="1"/>
 
-                <Label Canvas.Left="166"  Canvas.Top="7" Content="Chiều dài phôi (mm)" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                <Label Canvas.Left="88"  Canvas.Top="7" Content="Chiều dài phôi (mm)" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-                <controls:EasyLabel Canvas.Left="250"  Canvas.Top="61" TagPath="Local Station/Channel1/Device1/ChieuDaiPhoi" Grid.Row="0" Grid.Column="1"  Content="00000"
+                <controls:EasyLabel Canvas.Left="172"  Canvas.Top="61" TagPath="Local Station/Channel1/Device1/ChieuDaiPhoi" Grid.Row="0" Grid.Column="1"  Content="00000"
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right"
                             VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
-                <Label Canvas.Left="201"  Canvas.Top="181" Content="TG đông đặc (s)" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                <Label Canvas.Left="123"  Canvas.Top="181" Content="TG đông đặc (s)" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-                <controls:EasyLabel Canvas.Left="250"  Canvas.Top="235" TagPath="Local Station/Channel1/Device1/ThoiGianDongDac" Grid.Row="0" Grid.Column="1"  Content="0000"
+                <controls:EasyLabel Canvas.Left="172"  Canvas.Top="235" TagPath="Local Station/Channel1/Device1/ThoiGianDongDac" Grid.Row="0" Grid.Column="1"  Content="0000"
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right"
                             VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                 <!--<gauge:easyRealTimeTrend Canvas.Left="88" Canvas.Top="346" x:Name="realTimeChart" Height="424" Width="913" 
                                          PointNums="600" Interval="1000" StepLabelX="1" AxisYMax="5"/>-->
-                <gauge:easyRealTimeTrend Canvas.Left="88" Canvas.Top="346" x:Name="realTimeChart" Height="424" Width="913" 
+                <gauge:easyRealTimeTrend Canvas.Left="48" Canvas.Top="335" x:Name="realTimeChart" Height="424" Width="771" 
                                          PointNums="30" Interval="60000" StepLabelX="1" AxisYMax="5"/>
             </Canvas>
 
@@ -110,7 +112,7 @@
 
                     <controls:EasyLabel x:Name="labNDMatGieng" TagPath="Local Station/Channel1/TNuocMatGieng/Pv" Margin="3" Grid.Row="0" Grid.Column="1"  Content="0000"
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
                         <Label Content="NĐ nước giải" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
@@ -121,7 +123,7 @@
 
                     <controls:EasyLabel x:Name="labNDNuocGiaiNhietMam" TagPath="Local Station/Channel1/TNuocGiaiNhietMam/Pv" Margin="3" Grid.Row="1" Grid.Column="1"  Content="0000" 
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right" 
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
 
                     <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
@@ -133,7 +135,7 @@
 
                     <controls:EasyLabel x:Name="labNDKhongKhiTrongLo" TagPath="Local Station/Channel1/TKhongKhiTrongLo/Pv" Margin="3" Grid.Row="2" Grid.Column="1"  Content="0000" 
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
                         <Label Content="NĐ nước nhôm" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
@@ -144,7 +146,7 @@
 
                     <controls:EasyLabel x:Name="labNDNhomTaiMiengLo" TagPath="Local Station/Channel1/TNuocNhomTrongLo/Pv" Margin="3" Grid.Row="3" Grid.Column="1" 
                                     Content="0000" HorizontalAlignment="Stretch" VerticalAlignment="Center"  HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
                         <Label Content="NĐ nhôm trước" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
@@ -155,7 +157,7 @@
 
                     <controls:EasyLabel x:Name="labNDNhomTruocKhuon" TagPath="Local Station/Channel1/TNhomTruocKhuon/Pv" Margin="3" Grid.Row="4" Grid.Column="1"  Content="0000"
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center"  HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
                         <Label Content="NĐ nhôm cuối" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
@@ -166,7 +168,7 @@
 
                     <controls:EasyLabel x:Name="labNDNuocNhomTrongLo" TagPath="Local Station/Channel1/TNhomTaiMiengLo/Pv" Margin="3" Grid.Row="5" Grid.Column="1"  Content="0000"
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center"  HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
                     <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Vertical" VerticalAlignment="Center">
@@ -178,7 +180,7 @@
 
                     <controls:EasyTextBox x:Name="labTocDoCayKhuay" TagPath="Local Station/Channel1/Device1/TocDoCayKhuay" StringFormat="0.00" Margin="3" Grid.Row="0" Grid.Column="3"  Text="0000"
                                       HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Vertical" VerticalAlignment="Center">
                         <Label Content="Áp lực khí" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
@@ -189,7 +191,7 @@
 
                     <controls:EasyTextBox x:Name="labApKhiNito" TagPath="Local Station/Channel1/Device1/ApKhiArgon" StringFormat="0.00" Margin="3" Grid.Row="1" Grid.Column="3"  Text="0000"
                                       HorizontalAlignment="Stretch" VerticalAlignment="Center"  HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Vertical" VerticalAlignment="Center">
                         <Label Content="Áp lực nước" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
@@ -200,7 +202,7 @@
 
                     <controls:EasyTextBox x:Name="labApLucNuoc" TagPath="Local Station/Channel1/Device1/ApLucNuocL1" StringFormat="0.00" Margin="3" Grid.Row="2" Grid.Column="3"  Text="0000" 
                                       HorizontalAlignment="Stretch" VerticalAlignment="Center"  HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Vertical" VerticalAlignment="Center">
                         <Label Content="Vận tốc sợi" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
@@ -211,7 +213,7 @@
 
                     <controls:EasyTextBox x:Name="labThoiGianDongDac" TagPath="Local Station/Channel1/Device1/VanTocSoiTitan" Margin="3" Grid.Row="3" Grid.Column="3"  Text="0000"
                                       HorizontalAlignment="Stretch" VerticalAlignment="Center"  HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <StackPanel Grid.Row="4" Grid.Column="2" Orientation="Vertical" VerticalAlignment="Center">
                         <Label Content="Tần số xuống" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
@@ -223,7 +225,7 @@
                     <controls:EasyLabel x:Name="labTocDoXuongMam" TagPath="Local Station/Channel1/InvtXuongMam/f" StringFormat="0.00" Margin="3" Grid.Row="4" Grid.Column="3"
                                         Content="0000"
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <StackPanel Grid.Row="5" Grid.Column="2" Orientation="Vertical" VerticalAlignment="Center">
                         <Label Content="Tần số bơm" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
@@ -234,7 +236,7 @@
 
                     <controls:EasyLabel x:Name="labChieuDaiPhoi" TagPath="Local Station/Channel1/InvtBomNuoc/f" Margin="3" Grid.Row="5" Grid.Column="3"  Content="0000" 
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White" StringFormat="0.00"/>
+                            VerticalContentAlignment="Center" FontSize="50" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White" StringFormat="0.00"/>
                 </Grid>
             </Border>
         </Grid>
