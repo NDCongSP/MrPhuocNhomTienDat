@@ -60,9 +60,9 @@ namespace DemoPhucThinh
                     System.Windows.MessageBox.Show("Chưa chọn khoảng thời gian xuất. Mời chọn lại !", "CẢNH BÁO", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                Console.WriteLine(ex);
             }
         }
 
