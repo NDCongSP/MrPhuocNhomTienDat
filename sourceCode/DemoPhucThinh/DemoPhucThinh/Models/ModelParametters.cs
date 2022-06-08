@@ -39,7 +39,7 @@ namespace DemoPhucThinh
             this.DateTime = row["DateTime"].ToString();
             this.TNuocNhomTrongLo = !string.IsNullOrEmpty(row["NhietDoNuocNhomTrongLo"].ToString()) ? Math.Round(Convert.ToDouble(row["NhietDoNuocNhomTrongLo"]), 2) : 0;
             this.TNhomTruocKhuon = !string.IsNullOrEmpty(row["NhietDoNhomTruocKhuon"].ToString()) ? Math.Round(Convert.ToDouble(row["NhietDoNhomTruocKhuon"]), 2) : 0;
-            this.TNhomCuoiKho = !string.IsNullOrEmpty(row["NhietDoNhomCuoiKhuon"].ToString()) ? Math.Round(Convert.ToDouble(row["NhietDoNhomTaiMiengLo"]), 2) : 0;
+            this.TNhomCuoiKho = !string.IsNullOrEmpty(row["NhietDoNhomCuoiKhuon"].ToString()) ? Math.Round(Convert.ToDouble(row["NhietDoNhomCuoiKhuon"]), 2) : 0;
 
             this.TNuocGiaiNhietMam = !string.IsNullOrEmpty(row["NhietDoNuocGiaiNhietMam"].ToString()) ? Math.Round(Convert.ToDouble(row["NhietDoNuocGiaiNhietMam"]), 2) : 0;
             this.TNuocMatGieng = !string.IsNullOrEmpty(row["NhietDoNuocMatGieng"].ToString()) ? Math.Round(Convert.ToDouble(row["NhietDoNuocMatGieng"]), 2) : 0;
