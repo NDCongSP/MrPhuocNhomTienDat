@@ -93,15 +93,15 @@ namespace DemoPhucThinh
                             item.Min = double.TryParse(txtNDNuocNhomTrongLoMin.Text, out value) ? value : 0;
                             item.Max = double.TryParse(txtNDNuocNhomTrongLoMax.Text, out value) ? value : 0;
                             break;
-                        case "NDNhomTruocKhuon":
+                        case "NDSauTanOngTruocKhuon":
                             item.Min = double.TryParse(txtNDNhomTruocKhuonMin.Text, out value) ? value : 0;
                             item.Max = double.TryParse(txtNDNhomTruocKhuonMax.Text, out value) ? value : 0;
                             break;
-                        case "NDNhomTaiMiengLo":
+                        case "NDViTriThapNhatCuoiKhuon":
                             item.Min = double.TryParse(txtNDNhomTaiMiengLoMin.Text, out value) ? value : 0;
                             item.Max = double.TryParse(txtNDNhomTaiMiengLoMax.Text, out value) ? value : 0;
                             break;
-                        case "NDNuocGiaiNhietMam":
+                        case "NDSauLoXaTruocKhi":
                             item.Min = double.TryParse(txtNDNuocGiaiNhietMamMin.Text, out value) ? value : 0;
                             item.Max = double.TryParse(txtNDNuocGiaiNhietMamMax.Text, out value) ? value : 0;
                             break;
@@ -192,7 +192,7 @@ namespace DemoPhucThinh
                 }));
                 Dispatcher.BeginInvoke(new Action(() =>
                 {
-                    var res = (LimitSettingsModel)VariableGlobal.LimitParametter.FirstOrDefault(x => x.Parametters == "NDNhomTruocKhuon");
+                    var res = (LimitSettingsModel)VariableGlobal.LimitParametter.FirstOrDefault(x => x.Parametters == "NDSauTanOngTruocKhuon");
                     if (res != null)
                     {
                         txtNDNhomTruocKhuonMin.Text = res.Min.ToString();
@@ -201,7 +201,7 @@ namespace DemoPhucThinh
                 }));
                 Dispatcher.BeginInvoke(new Action(() =>
                 {
-                    var res = (LimitSettingsModel)VariableGlobal.LimitParametter.FirstOrDefault(x => x.Parametters == "NDNhomTaiMiengLo");
+                    var res = (LimitSettingsModel)VariableGlobal.LimitParametter.FirstOrDefault(x => x.Parametters == "NDViTriThapNhatCuoiKhuon");
                     if (res != null)
                     {
                         txtNDNhomTaiMiengLoMin.Text = res.Min.ToString();
@@ -210,7 +210,7 @@ namespace DemoPhucThinh
                 }));
                 Dispatcher.BeginInvoke(new Action(() =>
                 {
-                    var res = (LimitSettingsModel)VariableGlobal.LimitParametter.FirstOrDefault(x => x.Parametters == "NDNuocGiaiNhietMam");
+                    var res = (LimitSettingsModel)VariableGlobal.LimitParametter.FirstOrDefault(x => x.Parametters == "NDSauLoXaTruocKhi");
                     if (res != null)
                     {
                         txtNDNuocGiaiNhietMamMin.Text = res.Min.ToString();

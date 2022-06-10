@@ -123,9 +123,9 @@ namespace DemoPhucThinh
 
         private void MainWindow_Started(object sender, EventArgs e)
         {
-            TNuocMatGieng_ValueChanged(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNuocMatGieng/Pv"),
-                          new TagValueChangedEventArgs(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNuocMatGieng/Pv")
-                          , "", EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNuocMatGieng/Pv").Value));
+            TSauLoXaTruocKhi_ValueChanged(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TSauLoXaTruocKhi/Pv"),
+                          new TagValueChangedEventArgs(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TSauLoXaTruocKhi/Pv")
+                          , "", EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TSauLoXaTruocKhi/Pv").Value));
 
             TNuocGiaiNhietMam_ValueChanged(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNuocGiaiNhietMam/Pv"),
                           new TagValueChangedEventArgs(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNuocGiaiNhietMam/Pv")
@@ -139,13 +139,13 @@ namespace DemoPhucThinh
                           new TagValueChangedEventArgs(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNuocNhomTrongLo/Pv")
                           , "", EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNuocNhomTrongLo/Pv").Value));
 
-            TNhomTruocKhuon_ValueChanged1(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNhomTruocKhuon/Pv"),
-                          new TagValueChangedEventArgs(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNhomTruocKhuon/Pv")
-                          , "", EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNhomTruocKhuon/Pv").Value));
+            TSauTanOngTruocKhuon_ValueChanged1(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TSauTanOngTruocKhuon/Pv"),
+                          new TagValueChangedEventArgs(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TSauTanOngTruocKhuon/Pv")
+                          , "", EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TSauTanOngTruocKhuon/Pv").Value));
 
-            TNhomTaiMiengLo_ValueChanged1(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNhomTaiMiengLo/Pv"),
-                          new TagValueChangedEventArgs(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNhomTaiMiengLo/Pv")
-                          , "", EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNhomTaiMiengLo/Pv").Value));
+            TViTriThapNhatCuoiKhuon_ValueChanged1(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TViTriThapNhatCuoiKhuon/Pv"),
+                          new TagValueChangedEventArgs(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TViTriThapNhatCuoiKhuon/Pv")
+                          , "", EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TViTriThapNhatCuoiKhuon/Pv").Value));
             //Device1
             MacNhom_ValueChanged(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/Device1/MacNhom"),
                          new TagValueChangedEventArgs(EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/Device1/MacNhom")
@@ -200,12 +200,12 @@ namespace DemoPhucThinh
                            , "", EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/Device1/StopWriteExcel").Value));
 
 
-            EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNuocMatGieng/Pv").ValueChanged += TNuocMatGieng_ValueChanged; ;
+            EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TSauLoXaTruocKhi/Pv").ValueChanged += TSauLoXaTruocKhi_ValueChanged; ;
             EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNuocGiaiNhietMam/Pv").ValueChanged += TNuocGiaiNhietMam_ValueChanged; ;
             EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TKhongKhiTrongLo/Pv").ValueChanged += TKhongKhiTrongLo_ValueChanged1;
             EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNuocNhomTrongLo/Pv").ValueChanged += TNuocNhomTrongLo_ValueChanged1;
-            EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNhomTruocKhuon/Pv").ValueChanged += TNhomTruocKhuon_ValueChanged1; ;
-            EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TNhomTaiMiengLo/Pv").ValueChanged += TNhomTaiMiengLo_ValueChanged1;
+            EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TSauTanOngTruocKhuon/Pv").ValueChanged += TSauTanOngTruocKhuon_ValueChanged1; ;
+            EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/TViTriThapNhatCuoiKhuon/Pv").ValueChanged += TViTriThapNhatCuoiKhuon_ValueChanged1;
 
             EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/Device1/MacNhom").ValueChanged += MacNhom_ValueChanged;
             EasyDriverConnectorProvider.GetEasyDriverConnector().GetTag("Local Station/Channel1/Device1/DuongKinh").ValueChanged += DuongKinh_ValueChanged;
@@ -420,13 +420,13 @@ namespace DemoPhucThinh
             }
         }
 
-        private void TNhomTaiMiengLo_ValueChanged1(object sender, TagValueChangedEventArgs e)
+        private void TViTriThapNhatCuoiKhuon_ValueChanged1(object sender, TagValueChangedEventArgs e)
         {
             try
             {
                 DispatcherService.Instance.AddToDispatcherQueue(new Action(() =>
                 {
-                    parametterLocal.TNhomCuoiKho = !string.IsNullOrEmpty(e.NewValue) ? Convert.ToDouble(e.NewValue) : 0;
+                    parametterLocal.TViTriThapNhatCuoiKhuon = !string.IsNullOrEmpty(e.NewValue) ? Convert.ToDouble(e.NewValue) : 0;
                 }));
             }
             catch (Exception)
@@ -435,13 +435,13 @@ namespace DemoPhucThinh
             }
         }
 
-        private void TNhomTruocKhuon_ValueChanged1(object sender, TagValueChangedEventArgs e)
+        private void TSauTanOngTruocKhuon_ValueChanged1(object sender, TagValueChangedEventArgs e)
         {
             try
             {
                 DispatcherService.Instance.AddToDispatcherQueue(new Action(() =>
                 {
-                    parametterLocal.TNhomTruocKhuon = !string.IsNullOrEmpty(e.NewValue) ? Convert.ToDouble(e.NewValue) : 0;
+                    parametterLocal.TSauTanOngTruocKhuon = !string.IsNullOrEmpty(e.NewValue) ? Convert.ToDouble(e.NewValue) : 0;
                 }));
             }
             catch (Exception)
@@ -495,13 +495,13 @@ namespace DemoPhucThinh
             }
         }
 
-        private void TNuocMatGieng_ValueChanged(object sender, TagValueChangedEventArgs e)
+        private void TSauLoXaTruocKhi_ValueChanged(object sender, TagValueChangedEventArgs e)
         {
             try
             {
                 DispatcherService.Instance.AddToDispatcherQueue(new Action(() =>
                 {
-                    parametterLocal.TNuocMatGieng = !string.IsNullOrEmpty(e.NewValue) ? Convert.ToDouble(e.NewValue) : 0;
+                    parametterLocal.TSauLoXaTruocKhi = !string.IsNullOrEmpty(e.NewValue) ? Convert.ToDouble(e.NewValue) : 0;
                 }));
             }
             catch (Exception)
@@ -557,11 +557,11 @@ namespace DemoPhucThinh
             if (timeLog.TotalSeconds >= VariableGlobal.TimeInterval.ThoiGianLogData)
             {
                 //Log data
-                queryResult = DataProvider.Instance.ExecuteNonQuery($"insert into data (MacNhom,DuongKinh,NhietDoNuocNhomTrongLo,NhietDoNhomTruocKhuon,NhietDoNhomCuoiKhuon," +
-                    $"NhietDoNuocGiaiNhietMam,NhietDoNuocMatGieng,NhietDoKhongKhiTrongLo,ApLucNuocL1,VanTocSoiTitan,TocDoCayKhuay,ApKhiArgon," +
+                queryResult = DataProvider.Instance.ExecuteNonQuery($"insert into data (MacNhom,DuongKinh,NhietDoNuocNhomTrongLo,NhietDoSauTanOngTruocKhuon,NhietDoViTriThapNhatCuoiKhuon," +
+                    $"NhietDoNuocGiaiNhietMam,NhietDoSauLoXaTruocKhi,NhietDoKhongKhiTrongLo,ApLucNuocL1,VanTocSoiTitan,TocDoCayKhuay,ApKhiArgon," +
                     $"VanTocXuongMam,ChieuDaiPhoi,ThoiGianDongDac,TanSoXuongMam,TanSoBomNuoc) " +
-                    $"values ('{parametterLocal.MacNhom}','{parametterLocal.DuongKinh}',{parametterLocal.TNuocNhomTrongLo},{parametterLocal.TNhomTruocKhuon}," +
-                    $"{parametterLocal.TNhomCuoiKho},{parametterLocal.TNuocGiaiNhietMam},{parametterLocal.TNuocMatGieng},{parametterLocal.TKhongKhiTrongLo}," +
+                    $"values ('{parametterLocal.MacNhom}','{parametterLocal.DuongKinh}',{parametterLocal.TNuocNhomTrongLo},{parametterLocal.TSauTanOngTruocKhuon}," +
+                    $"{parametterLocal.TViTriThapNhatCuoiKhuon},{parametterLocal.TNuocGiaiNhietMam},{parametterLocal.TSauLoXaTruocKhi},{parametterLocal.TKhongKhiTrongLo}," +
                     $"{parametterLocal.ApLucNuocL1},{parametterLocal.VanTocSoiTitan},{parametterLocal.TocDoCayKhuay},{parametterLocal.ApKhiArgon},{parametterLocal.VanTocXuongMam}," +
                     $"{parametterLocal.ChieuDaiPhoi},{parametterLocal.ThoiGianDongDac},{parametterLocal.TanSoXuongMam},{parametterLocal.TanSoBomNuoc})");
                 if (queryResult > 0)
