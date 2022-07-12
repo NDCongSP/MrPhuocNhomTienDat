@@ -101,7 +101,7 @@ namespace DemoPhucThinh
                             item.Min = double.TryParse(txtNDNhomTaiMiengLoMin.Text, out value) ? value : 0;
                             item.Max = double.TryParse(txtNDNhomTaiMiengLoMax.Text, out value) ? value : 0;
                             break;
-                        case "NDSauLoXaTruocKhi":
+                        case "NDSauLoXaTruocKhi": 
                             item.Min = double.TryParse(txtNDNuocGiaiNhietMamMin.Text, out value) ? value : 0;
                             item.Max = double.TryParse(txtNDNuocGiaiNhietMamMax.Text, out value) ? value : 0;
                             break;
