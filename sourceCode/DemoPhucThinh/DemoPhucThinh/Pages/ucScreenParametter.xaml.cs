@@ -41,7 +41,7 @@ namespace DemoPhucThinh
                 gaugeNdNuocMatGieng.TitleGauge = "Nhiệt độ nước mặt giếng (oC)";
                 gaugeNdNuocMatGieng.StationName = "Local Station";
                 gaugeNdNuocMatGieng.ChannelName = "Channel1";
-                gaugeNdNuocMatGieng.DeviceName = "TNuocMatGieng";
+                gaugeNdNuocMatGieng.DeviceName = "TSauLoXaTruocKhi";
                 gaugeNdNuocMatGieng.TagName = "Pv";
                 gaugeNdNuocMatGieng.MaxValue = 100;
                 gaugeNdNuocMatGieng.Start();
@@ -73,7 +73,7 @@ namespace DemoPhucThinh
                 gaugeNdNhomTaiMiengLo.TitleGauge = "Nhiệt độ nhôm tại miệng lò (oC)";
                 gaugeNdNhomTaiMiengLo.StationName = "Local Station";
                 gaugeNdNhomTaiMiengLo.ChannelName = "Channel1";
-                gaugeNdNhomTaiMiengLo.DeviceName = "TNhomTaiMiengLo";
+                gaugeNdNhomTaiMiengLo.DeviceName = "TViTriThapNhatCuoiKhuon";
                 gaugeNdNhomTaiMiengLo.TagName = "Pv";
                 gaugeNdNhomTaiMiengLo.MaxValue = 1000;
                 gaugeNdNhomTaiMiengLo.Start();
@@ -81,7 +81,7 @@ namespace DemoPhucThinh
                 gaugeNdNhomTruocKhuon.TitleGauge = "Nhiệt độ nhôm trước khuôn (oC)";
                 gaugeNdNhomTruocKhuon.StationName = "Local Station";
                 gaugeNdNhomTruocKhuon.ChannelName = "Channel1";
-                gaugeNdNhomTruocKhuon.DeviceName = "TNhomTruocKhuon";
+                gaugeNdNhomTruocKhuon.DeviceName = "TSauTanOngTruocKhuon";
                 gaugeNdNhomTruocKhuon.TagName = "Pv";
                 gaugeNdNhomTruocKhuon.MaxValue = 1000;
                 gaugeNdNhomTruocKhuon.Start();

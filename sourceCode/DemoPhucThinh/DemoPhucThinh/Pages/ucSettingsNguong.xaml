@@ -17,7 +17,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1.45*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
@@ -66,14 +66,14 @@
                 <TextBox x:Name="txtNDNuocNhomTrongLoMax" Grid.Row="2" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
                 <!--Nhiệt độ nhôm trước khuôn-->
-                <Label Grid.Row="3" Content="NĐ nhôm trước khuôn" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                <Label Grid.Row="3" Content="NĐ sau tàn ong (trước khuôn)" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                 <TextBox x:Name="txtNDNhomTruocKhuonMin" Grid.Row="3" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
                 <TextBox x:Name="txtNDNhomTruocKhuonMax" Grid.Row="3" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
                 <!--Nhiệt độ nhôm tai mieng lo-->
-                <Label Grid.Row="4" Content="NĐ nhôm tại miệng lò" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                <Label Grid.Row="4" Content="NĐ vị trí thấp nhất (cuối khuôn)" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                 <TextBox x:Name="txtNDNhomTaiMiengLoMin" Grid.Row="4" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
@@ -87,7 +87,7 @@
                 <TextBox x:Name="txtNDNuocGiaiNhietMamMax" Grid.Row="5" Grid.Column="2" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>
                 <!--Nhiệt độ nước mặt giếng-->
-                <Label Grid.Row="6" Content="NĐ nước mặt giếng" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                <Label Grid.Row="6" Content="NĐ sau lỗ xả trước khí" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                 <TextBox x:Name="txtNDNuocMatGiengMin" Grid.Row="6" Grid.Column="1" Text="0" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="2"/>

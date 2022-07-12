@@ -102,69 +102,69 @@
                     </Grid.ColumnDefinitions>
 
                     <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
-                        <Label Content="NĐ nước mặt" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
-                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-                        <Label Content="giếng" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
-                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-                    </StackPanel>
-
-                    <controls:EasyLabel x:Name="labNDMatGieng" TagPath="Local Station/Channel1/TNuocMatGieng/Pv" Margin="3" Grid.Row="0" Grid.Column="1"  Content="0000"
-                                    HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right"
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
-
-                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
-                        <Label Content="NĐ nước giải" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
-                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-                        <Label Content="nhiệt mâm" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
-                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-                    </StackPanel>
-
-                    <controls:EasyLabel x:Name="labNDNuocGiaiNhietMam" TagPath="Local Station/Channel1/TNuocGiaiNhietMam/Pv" Margin="3" Grid.Row="1" Grid.Column="1"  Content="0000" 
-                                    HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right" 
-                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
-
-
-                    <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
                         <Label Content="NĐ không khí" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
                         <Label Content="trong lò" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
                     </StackPanel>
 
-                    <controls:EasyLabel x:Name="labNDKhongKhiTrongLo" TagPath="Local Station/Channel1/TKhongKhiTrongLo/Pv" Margin="3" Grid.Row="2" Grid.Column="1"  Content="0000" 
+                    <controls:EasyLabel x:Name="labNDMatGieng" TagPath="Local Station/Channel1/TKhongKhiTrongLo/Pv" Margin="3" Grid.Row="0" Grid.Column="1"  Content="0000"
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right"
                             VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
-                    <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
                         <Label Content="NĐ nước nhôm" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
                         <Label Content="trong lò" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
                     </StackPanel>
 
-                    <controls:EasyLabel x:Name="labNDNhomTaiMiengLo" TagPath="Local Station/Channel1/TNuocNhomTrongLo/Pv" Margin="3" Grid.Row="3" Grid.Column="1" 
+                    <controls:EasyLabel x:Name="labNDNuocGiaiNhietMam" TagPath="Local Station/Channel1/TNuocNhomTrongLo/Pv" Margin="3" Grid.Row="1" Grid.Column="1"  Content="0000" 
+                                    HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right" 
+                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+
+
+                    <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
+                        <Label Content="NĐ sau lỗ xả" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                        <Label Content="trước khí" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                    </StackPanel>
+
+                    <controls:EasyLabel x:Name="labNDKhongKhiTrongLo" TagPath="Local Station/Channel1/TSauLoXaTruocKhi/Pv" Margin="3" Grid.Row="2" Grid.Column="1"  Content="0000" 
+                                    HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right"
+                            VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
+
+                    <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
+                        <Label Content="NĐ sau tàn ong" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                        <Label Content="(trước khuôn)" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                       HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                    </StackPanel>
+
+                    <controls:EasyLabel x:Name="labNDNhomTaiMiengLo" TagPath="Local Station/Channel1/TSauTanOngTruocKhuon/Pv" Margin="3" Grid.Row="3" Grid.Column="1" 
                                     Content="0000" HorizontalAlignment="Stretch" VerticalAlignment="Center"  HorizontalContentAlignment="Right"
                             VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
-                        <Label Content="NĐ nhôm trước" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                        <Label Content="NĐ vị trí thấp nhất" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-                        <Label Content="khuôn" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                        <Label Content="(cuối khuôn)" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
                     </StackPanel>
 
-                    <controls:EasyLabel x:Name="labNDNhomTruocKhuon" TagPath="Local Station/Channel1/TNhomTruocKhuon/Pv" Margin="3" Grid.Row="4" Grid.Column="1"  Content="0000"
+                    <controls:EasyLabel x:Name="labNDNhomTruocKhuon" TagPath="Local Station/Channel1/TViTriThapNhatCuoiKhuon/Pv" Margin="3" Grid.Row="4" Grid.Column="1"  Content="0000"
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center"  HorizontalContentAlignment="Right"
                             VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 
                     <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
-                        <Label Content="NĐ nhôm cuối" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                        <Label Content="NĐ nước giải" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-                        <Label Content="khuôn" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
+                        <Label Content="nhiệt mâm" FontSize="35" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
                     </StackPanel>
 
-                    <controls:EasyLabel x:Name="labNDNuocNhomTrongLo" TagPath="Local Station/Channel1/TNhomTaiMiengLo/Pv" Margin="3" Grid.Row="5" Grid.Column="1"  Content="0000"
+                    <controls:EasyLabel x:Name="labNDNuocNhomTrongLo" TagPath="Local Station/Channel1/TNuocGiaiNhietMam/Pv" Margin="3" Grid.Row="5" Grid.Column="1"  Content="0000"
                                     HorizontalAlignment="Stretch" VerticalAlignment="Center"  HorizontalContentAlignment="Right"
                             VerticalContentAlignment="Center" FontSize="70" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White"/>
 

@@ -1,0 +1,562 @@
+{
+  "ItemType": "ConnectionSchema",
+  "ServerAddress": "127.0.0.1",
+  "Port": 8800,
+  "CommunicationMode": "ReceiveFromServer",
+  "RefreshRate": 1000,
+  "CreatedDate": "2022-01-23T19:15:18.789464+07:00",
+  "Username": null,
+  "Password": null,
+  "Properties": {},
+  "Childs": [
+    {
+  "ItemType": "LocalStation",
+  "Name": "Local Station",
+  "Path": "Local Station",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {},
+  "Childs": [
+    {
+  "ItemType": "Channel",
+  "Name": "Channel1",
+  "Path": "Local Station/Channel1",
+  "Description": null,
+  "DisplayInfo": "ModbusRTU COM2.9600.8.N.1",
+  "Error": null,
+  "Properties": {
+  "Port": "COM2",
+  "ScanRate": "100",
+  "Baudrate": "9600",
+  "Parity": "None",
+  "StopBits": "One",
+  "DelayBetweenPool": "5",
+  "MaxWritesCount": "10",
+  "DataBits": "8"
+},
+  "Childs": [
+    {
+  "ItemType": "Device",
+  "Name": "Device1",
+  "Path": "Local Station/Channel1/Device1",
+  "Description": null,
+  "DisplayInfo": "1",
+  "Error": null,
+  "Properties": {
+  "DeviceId": "1",
+  "Timeout": "1000",
+  "TryReadWriteTimes": "3",
+  "ReadMode": "Block",
+  "InputContactReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 1,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"100001\",\r\n    \"EndAddress\": \"100004\"\r\n  }\r\n]",
+  "OutputCoilsReadBlockSettings": "[]",
+  "InputRegisterReadBlockSettings": "[]",
+  "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"400001\",\r\n    \"EndAddress\": \"400014\"\r\n  }\r\n]"
+},
+  "Childs": [
+    {
+  "ItemType": "Tag",
+  "Name": "VanTocXuongMam",
+  "Path": "Local Station/Channel1/Device1/VanTocXuongMam",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "400015"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "ChieuDaiPhoi",
+  "Path": "Local Station/Channel1/Device1/ChieuDaiPhoi",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "400025"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "ApLucNuocL1",
+  "Path": "Local Station/Channel1/Device1/ApLucNuocL1",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "401055"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "ApKhiArgon",
+  "Path": "Local Station/Channel1/Device1/ApKhiArgon",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "401059"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "MacNhom1",
+  "Path": "Local Station/Channel1/Device1/MacNhom1",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "401051"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "DuongKinh",
+  "Path": "Local Station/Channel1/Device1/DuongKinh",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "401053"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "TocDoCayKhuay",
+  "Path": "Local Station/Channel1/Device1/TocDoCayKhuay",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "401057"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "ThoiGianDongDac",
+  "Path": "Local Station/Channel1/Device1/ThoiGianDongDac",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "401061"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "MacNhom",
+  "Path": "Local Station/Channel1/Device1/MacNhom",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "String",
+  "Address": "Retain"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "VanTocSoiTitan",
+  "Path": "Local Station/Channel1/Device1/VanTocSoiTitan",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "401070"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "StartWriteExcel",
+  "Path": "Local Station/Channel1/Device1/StartWriteExcel",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "400800"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "StopWriteExcel",
+  "Path": "Local Station/Channel1/Device1/StopWriteExcel",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "400801"
+},
+  "Childs": []
+}
+  ]
+},
+    {
+  "ItemType": "Device",
+  "Name": "TNuocNhomTrongLo",
+  "Path": "Local Station/Channel1/TNuocNhomTrongLo",
+  "Description": null,
+  "DisplayInfo": "5",
+  "Error": null,
+  "Properties": {
+  "DeviceId": "5",
+  "Timeout": "1000",
+  "TryReadWriteTimes": "3",
+  "ReadMode": "Block",
+  "InputContactReadBlockSettings": "[]",
+  "OutputCoilsReadBlockSettings": "[]",
+  "InputRegisterReadBlockSettings": "[]",
+  "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+},
+  "Childs": [
+    {
+  "ItemType": "Tag",
+  "Name": "Pv",
+  "Path": "Local Station/Channel1/TNuocNhomTrongLo/Pv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408193"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "Sv",
+  "Path": "Local Station/Channel1/TNuocNhomTrongLo/Sv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408195"
+},
+  "Childs": []
+}
+  ]
+},
+    {
+  "ItemType": "Device",
+  "Name": "TNhomTruocKhuon",
+  "Path": "Local Station/Channel1/TNhomTruocKhuon",
+  "Description": null,
+  "DisplayInfo": "4",
+  "Error": null,
+  "Properties": {
+  "DeviceId": "4",
+  "Timeout": "1000",
+  "TryReadWriteTimes": "3",
+  "ReadMode": "Block",
+  "InputContactReadBlockSettings": "[]",
+  "OutputCoilsReadBlockSettings": "[]",
+  "InputRegisterReadBlockSettings": "[]",
+  "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+},
+  "Childs": [
+    {
+  "ItemType": "Tag",
+  "Name": "Pv",
+  "Path": "Local Station/Channel1/TNhomTruocKhuon/Pv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408193"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "Sv",
+  "Path": "Local Station/Channel1/TNhomTruocKhuon/Sv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408195"
+},
+  "Childs": []
+}
+  ]
+},
+    {
+  "ItemType": "Device",
+  "Name": "TNhomTaiMiengLo",
+  "Path": "Local Station/Channel1/TNhomTaiMiengLo",
+  "Description": null,
+  "DisplayInfo": "3",
+  "Error": null,
+  "Properties": {
+  "DeviceId": "3",
+  "Timeout": "1000",
+  "TryReadWriteTimes": "3",
+  "ReadMode": "Block",
+  "InputContactReadBlockSettings": "[]",
+  "OutputCoilsReadBlockSettings": "[]",
+  "InputRegisterReadBlockSettings": "[]",
+  "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+},
+  "Childs": [
+    {
+  "ItemType": "Tag",
+  "Name": "Pv",
+  "Path": "Local Station/Channel1/TNhomTaiMiengLo/Pv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408193"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "Sv",
+  "Path": "Local Station/Channel1/TNhomTaiMiengLo/Sv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408195"
+},
+  "Childs": []
+}
+  ]
+},
+    {
+  "ItemType": "Device",
+  "Name": "TNuocGiaiNhietMam",
+  "Path": "Local Station/Channel1/TNuocGiaiNhietMam",
+  "Description": null,
+  "DisplayInfo": "6",
+  "Error": null,
+  "Properties": {
+  "DeviceId": "6",
+  "Timeout": "1000",
+  "TryReadWriteTimes": "3",
+  "ReadMode": "Block",
+  "InputContactReadBlockSettings": "[]",
+  "OutputCoilsReadBlockSettings": "[]",
+  "InputRegisterReadBlockSettings": "[]",
+  "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+},
+  "Childs": [
+    {
+  "ItemType": "Tag",
+  "Name": "Pv",
+  "Path": "Local Station/Channel1/TNuocGiaiNhietMam/Pv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408193"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "Sv",
+  "Path": "Local Station/Channel1/TNuocGiaiNhietMam/Sv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408195"
+},
+  "Childs": []
+}
+  ]
+},
+    {
+  "ItemType": "Device",
+  "Name": "TNuocMatGieng",
+  "Path": "Local Station/Channel1/TNuocMatGieng",
+  "Description": null,
+  "DisplayInfo": "7",
+  "Error": null,
+  "Properties": {
+  "DeviceId": "7",
+  "Timeout": "1000",
+  "TryReadWriteTimes": "3",
+  "ReadMode": "Block",
+  "InputContactReadBlockSettings": "[]",
+  "OutputCoilsReadBlockSettings": "[]",
+  "InputRegisterReadBlockSettings": "[]",
+  "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+},
+  "Childs": [
+    {
+  "ItemType": "Tag",
+  "Name": "Pv",
+  "Path": "Local Station/Channel1/TNuocMatGieng/Pv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408193"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "Sv",
+  "Path": "Local Station/Channel1/TNuocMatGieng/Sv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408195"
+},
+  "Childs": []
+}
+  ]
+},
+    {
+  "ItemType": "Device",
+  "Name": "TKhongKhiTrongLo",
+  "Path": "Local Station/Channel1/TKhongKhiTrongLo",
+  "Description": null,
+  "DisplayInfo": "8",
+  "Error": null,
+  "Properties": {
+  "DeviceId": "8",
+  "Timeout": "1000",
+  "TryReadWriteTimes": "3",
+  "ReadMode": "Block",
+  "InputContactReadBlockSettings": "[]",
+  "OutputCoilsReadBlockSettings": "[]",
+  "InputRegisterReadBlockSettings": "[]",
+  "HoldingRegisterReadBlockSettings": "[]"
+},
+  "Childs": [
+    {
+  "ItemType": "Tag",
+  "Name": "Pv",
+  "Path": "Local Station/Channel1/TKhongKhiTrongLo/Pv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408193"
+},
+  "Childs": []
+},
+    {
+  "ItemType": "Tag",
+  "Name": "Sv",
+  "Path": "Local Station/Channel1/TKhongKhiTrongLo/Sv",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Short",
+  "Address": "408195"
+},
+  "Childs": []
+}
+  ]
+},
+    {
+  "ItemType": "Device",
+  "Name": "InvtBomNuoc",
+  "Path": "Local Station/Channel1/InvtBomNuoc",
+  "Description": null,
+  "DisplayInfo": "9",
+  "Error": null,
+  "Properties": {
+  "DeviceId": "9",
+  "Timeout": "1000",
+  "TryReadWriteTimes": "3",
+  "ReadMode": "Block",
+  "InputContactReadBlockSettings": "[]",
+  "OutputCoilsReadBlockSettings": "[]",
+  "InputRegisterReadBlockSettings": "[]",
+  "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"400001\",\r\n    \"EndAddress\": \"400002\"\r\n  }\r\n]"
+},
+  "Childs": [
+    {
+  "ItemType": "Tag",
+  "Name": "f",
+  "Path": "Local Station/Channel1/InvtBomNuoc/f",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "400201"
+},
+  "Childs": []
+}
+  ]
+},
+    {
+  "ItemType": "Device",
+  "Name": "InvtXuongMam",
+  "Path": "Local Station/Channel1/InvtXuongMam",
+  "Description": null,
+  "DisplayInfo": "10",
+  "Error": null,
+  "Properties": {
+  "DeviceId": "10",
+  "Timeout": "1000",
+  "TryReadWriteTimes": "3",
+  "ReadMode": "Block",
+  "InputContactReadBlockSettings": "[]",
+  "OutputCoilsReadBlockSettings": "[]",
+  "InputRegisterReadBlockSettings": "[]",
+  "HoldingRegisterReadBlockSettings": "[]"
+},
+  "Childs": [
+    {
+  "ItemType": "Tag",
+  "Name": "f",
+  "Path": "Local Station/Channel1/InvtXuongMam/f",
+  "Description": null,
+  "DisplayInfo": null,
+  "Error": null,
+  "Properties": {
+  "DataType": "Word",
+  "Address": "400201"
+},
+  "Childs": []
+}
+  ]
+}
+  ]
+}
+  ]
+}
+  ]
+}

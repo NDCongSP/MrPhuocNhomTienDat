@@ -1,0 +1,1106 @@
+{
+  "ProjectPath": "D:\\MyCompany\\8.SourceCode\\3.Projects\\MrPhuocNhomTienDat\\info\\EasyDriverTagsGiamSatDucNhom.json",
+  "Username": null,
+  "Password": null,
+  "ParameterContainer": null,
+  "Childs": [
+    {
+  "Name": "Local Station",
+  "Description": null,
+  "ItemType": "LocalStation",
+  "IsReadOnly": true,
+  "Enabled": true,
+  "CreatedDate": "2021-04-02T06:22:06.1325855+07:00",
+  "ModifiedDate": "2022-05-30T09:52:57.0558519+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {}
+},
+  "CommunicationMode": "ReceiveFromServer",
+  "StationType": "Local",
+  "RemoteAddress": null,
+  "Port": 0,
+  "ConnectionString": null,
+  "RefreshRate": 0,
+  "Childs": [
+    {
+  "Name": "Channel1",
+  "Description": null,
+  "ItemType": "Channel",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-04-02T06:23:24.5797519+07:00",
+  "ModifiedDate": "2022-05-30T09:52:57.0558519+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "Port": "COM11",
+    "ScanRate": "100",
+    "Baudrate": "9600",
+    "Parity": "None",
+    "StopBits": "One",
+    "DelayBetweenPool": "5",
+    "MaxWritesCount": "10",
+    "DataBits": "8"
+  }
+},
+  "DriverPath": "ModbusRTU",
+  "Childs": [
+    {
+  "Name": "Device1",
+  "Description": null,
+  "ItemType": "Device",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-04-02T06:24:25.5858723+07:00",
+  "ModifiedDate": "2022-05-30T09:52:57.0558519+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DeviceId": "1",
+    "Timeout": "1000",
+    "TryReadWriteTimes": "3",
+    "ReadMode": "Block",
+    "InputContactReadBlockSettings": "[]",
+    "OutputCoilsReadBlockSettings": "[]",
+    "InputRegisterReadBlockSettings": "[]",
+    "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"400015\",\r\n    \"EndAddress\": \"400025\"\r\n  },\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"400801\",\r\n    \"EndAddress\": \"400803\"\r\n  },\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"401051\",\r\n    \"EndAddress\": \"401070\"\r\n  }\r\n]"
+  }
+},
+  "ByteOrder": "ABCD",
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": [
+    {
+  "Name": "VanTocXuongMam",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-04-02T19:36:58.1520027+07:00",
+  "ModifiedDate": "2021-04-02T19:36:58.1520027+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Word",
+    "Address": "400015"
+  }
+},
+  "Address": "400015",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 0.01,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "ChieuDaiPhoi",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-04-02T19:37:10.0222623+07:00",
+  "ModifiedDate": "2021-04-02T19:37:10.0222623+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Word",
+    "Address": "400025"
+  }
+},
+  "Address": "400025",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "ApLucNuocL1",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-17T13:38:40.4820885+07:00",
+  "ModifiedDate": "2021-05-17T13:38:40.4820885+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Word",
+    "Address": "401055"
+  }
+},
+  "Address": "401055",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 0.01,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "ApKhiArgon",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-17T13:39:00.9609165+07:00",
+  "ModifiedDate": "2021-05-17T13:39:00.9609165+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Word",
+    "Address": "401059"
+  }
+},
+  "Address": "401059",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 0.01,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "MacNhom1",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-17T13:54:45.9586121+07:00",
+  "ModifiedDate": "2021-05-17T13:54:45.9586121+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Word",
+    "Address": "401051"
+  }
+},
+  "Address": "401051",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "DuongKinh1",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-17T13:55:29.3980861+07:00",
+  "ModifiedDate": "2021-05-17T13:55:29.3980861+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Word",
+    "Address": "401053"
+  }
+},
+  "Address": "401053",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "TocDoCayKhuay",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-17T13:56:19.5274177+07:00",
+  "ModifiedDate": "2021-05-17T13:56:19.5274177+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Word",
+    "Address": "401057"
+  }
+},
+  "Address": "401057",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 0.1,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "ThoiGianDongDac",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-17T13:56:42.9960753+07:00",
+  "ModifiedDate": "2021-05-17T13:56:42.9960753+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Word",
+    "Address": "401061"
+  }
+},
+  "Address": "401061",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "MacNhom",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-17T21:58:22.0818915+07:00",
+  "ModifiedDate": "2021-05-17T21:58:22.0818915+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "String",
+    "Address": "Retain"
+  }
+},
+  "Address": "Retain",
+  "DataTypeName": "String",
+  "RefreshRate": 0,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": true,
+  "GUID": "22ca0c35-d911-4e17-8d8c-ec43f9860845",
+  "Retain": true,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "VanTocSoiTitan",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-25T20:06:23.2533862+07:00",
+  "ModifiedDate": "2021-05-25T20:06:23.2533862+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Word",
+    "Address": "400030"
+  }
+},
+  "Address": "401071",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "StartWriteExcel",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2022-01-23T19:14:19.8522994+07:00",
+  "ModifiedDate": "2022-01-23T19:14:19.8522994+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {}
+},
+  "Address": "400801",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "StopWriteExcel",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2022-01-23T19:14:41.8008136+07:00",
+  "ModifiedDate": "2022-01-23T19:14:41.8008136+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {}
+},
+  "Address": "400803",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "DuongKinh",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2022-01-26T16:48:23.5801575+07:00",
+  "ModifiedDate": "2022-01-26T16:48:23.5801575+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {}
+},
+  "Address": "Retain",
+  "DataTypeName": "String",
+  "RefreshRate": 0,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": true,
+  "GUID": "926d4c4f-ad9a-45af-87e1-b9191f72164a",
+  "Retain": true,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+}
+  ]
+},
+    {
+  "Name": "TNuocNhomTrongLo",
+  "Description": null,
+  "ItemType": "Device",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:14:41.8035865+07:00",
+  "ModifiedDate": "2022-05-30T09:52:57.0558519+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DeviceId": "5",
+    "Timeout": "1000",
+    "TryReadWriteTimes": "3",
+    "ReadMode": "Block",
+    "InputContactReadBlockSettings": "[]",
+    "OutputCoilsReadBlockSettings": "[]",
+    "InputRegisterReadBlockSettings": "[]",
+    "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+  }
+},
+  "ByteOrder": "ABCD",
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": [
+    {
+  "Name": "Pv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:15:16.4043949+07:00",
+  "ModifiedDate": "2021-05-07T11:15:16.4043949+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408193"
+  }
+},
+  "Address": "408193",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "Sv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:15:41.0448988+07:00",
+  "ModifiedDate": "2021-05-07T11:15:41.0448988+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408195"
+  }
+},
+  "Address": "408195",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+}
+  ]
+},
+    {
+  "Name": "TNhomTruocKhuon",
+  "Description": null,
+  "ItemType": "Device",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:17:18.5231173+07:00",
+  "ModifiedDate": "2022-05-30T09:52:57.0558519+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DeviceId": "4",
+    "Timeout": "1000",
+    "TryReadWriteTimes": "3",
+    "ReadMode": "Block",
+    "InputContactReadBlockSettings": "[]",
+    "OutputCoilsReadBlockSettings": "[]",
+    "InputRegisterReadBlockSettings": "[]",
+    "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+  }
+},
+  "ByteOrder": "ABCD",
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": [
+    {
+  "Name": "Pv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:18:02.3481617+07:00",
+  "ModifiedDate": "2021-05-07T11:18:02.3481617+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408193"
+  }
+},
+  "Address": "408193",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "Sv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:18:02.3481617+07:00",
+  "ModifiedDate": "2021-05-07T11:18:02.3481617+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408195"
+  }
+},
+  "Address": "408195",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+}
+  ]
+},
+    {
+  "Name": "TNhomTaiMiengLo",
+  "Description": null,
+  "ItemType": "Device",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:19:01.8167803+07:00",
+  "ModifiedDate": "2022-05-30T09:52:57.0558519+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DeviceId": "3",
+    "Timeout": "1000",
+    "TryReadWriteTimes": "3",
+    "ReadMode": "Block",
+    "InputContactReadBlockSettings": "[]",
+    "OutputCoilsReadBlockSettings": "[]",
+    "InputRegisterReadBlockSettings": "[]",
+    "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+  }
+},
+  "ByteOrder": "ABCD",
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": [
+    {
+  "Name": "Pv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:19:26.9573954+07:00",
+  "ModifiedDate": "2021-05-07T11:19:26.9573954+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408193"
+  }
+},
+  "Address": "408193",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "Sv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:19:42.6092104+07:00",
+  "ModifiedDate": "2021-05-07T11:19:42.6092104+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408195"
+  }
+},
+  "Address": "408195",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+}
+  ]
+},
+    {
+  "Name": "TNuocGiaiNhietMam",
+  "Description": null,
+  "ItemType": "Device",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:20:23.7092614+07:00",
+  "ModifiedDate": "2022-05-30T09:52:57.0558519+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DeviceId": "6",
+    "Timeout": "1000",
+    "TryReadWriteTimes": "3",
+    "ReadMode": "Block",
+    "InputContactReadBlockSettings": "[]",
+    "OutputCoilsReadBlockSettings": "[]",
+    "InputRegisterReadBlockSettings": "[]",
+    "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+  }
+},
+  "ByteOrder": "ABCD",
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": [
+    {
+  "Name": "Pv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:20:35.7145153+07:00",
+  "ModifiedDate": "2021-05-07T11:20:35.7145153+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408193"
+  }
+},
+  "Address": "408193",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "Sv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:20:55.2238346+07:00",
+  "ModifiedDate": "2021-05-07T11:20:55.2238346+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408195"
+  }
+},
+  "Address": "408195",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+}
+  ]
+},
+    {
+  "Name": "TNuocMatGieng",
+  "Description": null,
+  "ItemType": "Device",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:21:27.4226299+07:00",
+  "ModifiedDate": "2022-05-30T09:52:57.0558519+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DeviceId": "7",
+    "Timeout": "1000",
+    "TryReadWriteTimes": "3",
+    "ReadMode": "Block",
+    "InputContactReadBlockSettings": "[]",
+    "OutputCoilsReadBlockSettings": "[]",
+    "InputRegisterReadBlockSettings": "[]",
+    "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+  }
+},
+  "ByteOrder": "ABCD",
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": [
+    {
+  "Name": "Pv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:21:44.9000602+07:00",
+  "ModifiedDate": "2021-05-07T11:21:44.9000602+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408193"
+  }
+},
+  "Address": "408193",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "Sv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:21:56.4548579+07:00",
+  "ModifiedDate": "2021-05-07T11:21:56.4548579+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408195"
+  }
+},
+  "Address": "408195",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+}
+  ]
+},
+    {
+  "Name": "TKhongKhiTrongLo",
+  "Description": null,
+  "ItemType": "Device",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:23:48.8673977+07:00",
+  "ModifiedDate": "2022-05-30T09:52:57.0558519+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DeviceId": "8",
+    "Timeout": "1000",
+    "TryReadWriteTimes": "3",
+    "ReadMode": "Block",
+    "InputContactReadBlockSettings": "[]",
+    "OutputCoilsReadBlockSettings": "[]",
+    "InputRegisterReadBlockSettings": "[]",
+    "HoldingRegisterReadBlockSettings": "[]"
+  }
+},
+  "ByteOrder": "ABCD",
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": [
+    {
+  "Name": "Pv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:24:05.7527352+07:00",
+  "ModifiedDate": "2021-05-07T11:24:05.7527352+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408193"
+  }
+},
+  "Address": "408193",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+},
+    {
+  "Name": "Sv",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-07T11:24:17.9644151+07:00",
+  "ModifiedDate": "2021-05-07T11:24:17.9644151+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Short",
+    "Address": "408195"
+  }
+},
+  "Address": "408195",
+  "DataTypeName": "Short",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 1.0,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+}
+  ]
+},
+    {
+  "Name": "InvtBomNuoc",
+  "Description": null,
+  "ItemType": "Device",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-25T20:08:58.264759+07:00",
+  "ModifiedDate": "2022-05-30T09:52:57.0558519+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DeviceId": "9",
+    "Timeout": "1000",
+    "TryReadWriteTimes": "3",
+    "ReadMode": "Block",
+    "InputContactReadBlockSettings": "[]",
+    "OutputCoilsReadBlockSettings": "[]",
+    "InputRegisterReadBlockSettings": "[]",
+    "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"400001\",\r\n    \"EndAddress\": \"400002\"\r\n  }\r\n]"
+  }
+},
+  "ByteOrder": "ABCD",
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": [
+    {
+  "Name": "f",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-05-25T20:09:36.9602731+07:00",
+  "ModifiedDate": "2021-05-25T20:09:36.9602731+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DataType": "Word",
+    "Address": "400002"
+  }
+},
+  "Address": "400201",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 0.01,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+}
+  ]
+},
+    {
+  "Name": "InvtXuongMam",
+  "Description": null,
+  "ItemType": "Device",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-11-02T10:39:14.7856917+07:00",
+  "ModifiedDate": "2022-05-30T09:52:57.0558519+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {
+    "DeviceId": "10",
+    "Timeout": "1000",
+    "TryReadWriteTimes": "3",
+    "ReadMode": "Block",
+    "InputContactReadBlockSettings": "[]",
+    "OutputCoilsReadBlockSettings": "[]",
+    "InputRegisterReadBlockSettings": "[]",
+    "HoldingRegisterReadBlockSettings": "[]"
+  }
+},
+  "ByteOrder": "ABCD",
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": [
+    {
+  "Name": "f",
+  "Description": null,
+  "ItemType": "Tag",
+  "IsReadOnly": false,
+  "Enabled": true,
+  "CreatedDate": "2021-11-02T10:39:47.5650384+07:00",
+  "ModifiedDate": "2021-11-02T10:39:47.5650384+07:00",
+  "ParameterContainer": {
+  "DisplayName": null,
+  "DisplayParameters": null,
+  "Parameters": {}
+},
+  "Address": "400201",
+  "DataTypeName": "Word",
+  "RefreshRate": 100,
+  "ByteOrder": 0,
+  "AccessPermission": "ReadAndWrite",
+  "Offset": 0.0,
+  "Gain": 0.01,
+  "IsInternalTag": false,
+  "GUID": null,
+  "Retain": false,
+  "Childs": [],
+  "HaveTags": true,
+  "Tags": []
+}
+  ]
+}
+  ]
+}
+  ]
+}
+  ]
+}

@@ -26,7 +26,7 @@
 
         <Label Margin="3" Grid.Column="1" Content="NHIỆT ĐỘ NƯỚC MẶT GIẾNG (oC)" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-        <controls:EasyTextBox x:Name="labNDMatGieng" TagPath="Local Station/Channel1/TNuocMatGieng/Sv" Margin="3" Grid.Column="2"  
+        <controls:EasyTextBox x:Name="labNDMatGieng" TagPath="Local Station/Channel1/TSauLoXaTruocKhi/Sv" Margin="3" Grid.Column="2"  
                             Text="0000" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
                             VerticalContentAlignment="Center" FontSize="100" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White" TabIndex="1"/>
 
@@ -50,13 +50,13 @@
 
         <Label Margin="3" Grid.Row="4" Grid.Column="1" Content="NHIỆT ĐỘ NHÔM TRƯƠC KHUÔN (oC)" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-        <controls:EasyTextBox x:Name="labNDNhomTaiMiengLo" TagPath="Local Station/Channel1/TNhomTruocKhuon/Sv" Margin="3" Grid.Row="4" Grid.Column="2" 
+        <controls:EasyTextBox x:Name="labNDNhomTaiMiengLo" TagPath="Local Station/Channel1/TSauTanOngTruocKhuon/Sv" Margin="3" Grid.Row="4" Grid.Column="2" 
                             Text="0000" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
                             VerticalContentAlignment="Center" FontSize="100" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White" TabIndex="5"/>
 
         <Label Margin="3" Grid.Row="5" Grid.Column="1" Content="NHIỆT ĐỘ NHÔM TẠI MIỆNG LÒ (oC)" FontSize="40" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Black"
                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-        <controls:EasyTextBox x:Name="labNDNhomTruocKhuon" TagPath="Local Station/Channel1/TNhomTaiMiengLo/Sv" Margin="3" Grid.Row="5" Grid.Column="2"  
+        <controls:EasyTextBox x:Name="labNDNhomTruocKhuon" TagPath="Local Station/Channel1/TViTriThapNhatCuoiKhuon/Sv" Margin="3" Grid.Row="5" Grid.Column="2"  
                             Text="0000" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Right"
                             VerticalContentAlignment="Center" FontSize="100" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Red" Background="White" TabIndex="6"/>
 
