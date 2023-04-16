@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\MyCompany\7.SourceCode\3.Projects\MrPhuocCtySonThinhBD\sourceCode\Gauge\Gauge\obj\Debug\
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\Gauge\Gauge\obj\Debug\
 Gauge
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 18-1374941131
 
 231926037846
-38-1984360375
+89-1062943585
 EasyButton.xaml;EasyCountRunTime.xaml;EasyCountRunTimeTotal.xaml;EasySw2Status.xaml;EasyTagValueTotalPerDay.xaml;Graphic\EasyImageStatusGifFR.xaml;Graphic\EasyImageFR.xaml;EasyLabelStatus.xaml;EasyMotorFR.xaml;EasyProgressBarVertical.xaml;Progressbar\EasyProgressBar.xaml;EasySw3Status.xaml;Graphic\EasyImageStatus.xaml;Graphic\EasyImageStatusGif.xaml;Graphic\EasyImage.xaml;ProgessBarTest.xaml;RealTimeTrend\easyRealTimeTrend.xaml;TempGauge.xaml;
 
 False

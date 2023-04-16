@@ -1,0 +1,613 @@
+{
+  "ItemType": 0,
+  "ServerAddress": "127.0.0.1",
+  "Port": 8800,
+  "CommunicationMode": 0,
+  "RefreshRate": 100,
+  "CreatedDate": "2022-06-10T05:57:32.703232+07:00",
+  "Username": null,
+  "Password": null,
+  "Childs": [
+    {
+      "ItemType": 1,
+      "Name": "Local Station",
+      "Path": "Local Station",
+      "Description": null,
+      "DisplayInfo": null,
+      "Error": null,
+      "ConnectionStatus": 1,
+      "Childs": [
+        {
+          "ItemType": 3,
+          "Name": "Channel1",
+          "Path": "Local Station/Channel1",
+          "Description": null,
+          "DisplayInfo": "ModbusRTU COM11.9600.8.N.1",
+          "Error": null,
+          "ConnectionStatus": 0,
+          "Childs": [
+            {
+              "ItemType": 4,
+              "Name": "Device1",
+              "Path": "Local Station/Channel1/Device1",
+              "Description": null,
+              "DisplayInfo": "1",
+              "Error": null,
+              "ConnectionStatus": 0,
+              "Childs": [
+                {
+                  "ItemType": 6,
+                  "Name": "VanTocXuongMam",
+                  "Path": "Local Station/Channel1/Device1/VanTocXuongMam",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "400015"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "ChieuDaiPhoi",
+                  "Path": "Local Station/Channel1/Device1/ChieuDaiPhoi",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "400025"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "ApLucNuocL1",
+                  "Path": "Local Station/Channel1/Device1/ApLucNuocL1",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "401055"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "ApKhiArgon",
+                  "Path": "Local Station/Channel1/Device1/ApKhiArgon",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "401059"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "MacNhom1",
+                  "Path": "Local Station/Channel1/Device1/MacNhom1",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "401051"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "DuongKinh1",
+                  "Path": "Local Station/Channel1/Device1/DuongKinh1",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "401053"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "TocDoCayKhuay",
+                  "Path": "Local Station/Channel1/Device1/TocDoCayKhuay",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "401057"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "ThoiGianDongDac",
+                  "Path": "Local Station/Channel1/Device1/ThoiGianDongDac",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "401061"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "MacNhom",
+                  "Path": "Local Station/Channel1/Device1/MacNhom",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "String",
+                    "Address": "Retain"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "VanTocSoiTitan",
+                  "Path": "Local Station/Channel1/Device1/VanTocSoiTitan",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "401071"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "StartWriteExcel",
+                  "Path": "Local Station/Channel1/Device1/StartWriteExcel",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "400801"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "StopWriteExcel",
+                  "Path": "Local Station/Channel1/Device1/StopWriteExcel",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "400803"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "DuongKinh",
+                  "Path": "Local Station/Channel1/Device1/DuongKinh",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "String",
+                    "Address": "Retain"
+                  }
+                }
+              ],
+              "Properties": {
+                "DeviceId": "1",
+                "Timeout": "1000",
+                "TryReadWriteTimes": "3",
+                "ReadMode": "Block",
+                "InputContactReadBlockSettings": "[]",
+                "OutputCoilsReadBlockSettings": "[]",
+                "InputRegisterReadBlockSettings": "[]",
+                "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"400015\",\r\n    \"EndAddress\": \"400025\"\r\n  },\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"400801\",\r\n    \"EndAddress\": \"400803\"\r\n  },\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"401051\",\r\n    \"EndAddress\": \"401070\"\r\n  }\r\n]"
+              }
+            },
+            {
+              "ItemType": 4,
+              "Name": "TNuocNhomTrongLo",
+              "Path": "Local Station/Channel1/TNuocNhomTrongLo",
+              "Description": null,
+              "DisplayInfo": "5",
+              "Error": null,
+              "ConnectionStatus": 0,
+              "Childs": [
+                {
+                  "ItemType": 6,
+                  "Name": "Pv",
+                  "Path": "Local Station/Channel1/TNuocNhomTrongLo/Pv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408193"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Sv",
+                  "Path": "Local Station/Channel1/TNuocNhomTrongLo/Sv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408195"
+                  }
+                }
+              ],
+              "Properties": {
+                "DeviceId": "5",
+                "Timeout": "1000",
+                "TryReadWriteTimes": "3",
+                "ReadMode": "Block",
+                "InputContactReadBlockSettings": "[]",
+                "OutputCoilsReadBlockSettings": "[]",
+                "InputRegisterReadBlockSettings": "[]",
+                "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+              }
+            },
+            {
+              "ItemType": 4,
+              "Name": "TSauTanOngTruocKhuon",
+              "Path": "Local Station/Channel1/TSauTanOngTruocKhuon",
+              "Description": null,
+              "DisplayInfo": "4",
+              "Error": null,
+              "ConnectionStatus": 0,
+              "Childs": [
+                {
+                  "ItemType": 6,
+                  "Name": "Pv",
+                  "Path": "Local Station/Channel1/TSauTanOngTruocKhuon/Pv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408193"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Sv",
+                  "Path": "Local Station/Channel1/TSauTanOngTruocKhuon/Sv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408195"
+                  }
+                }
+              ],
+              "Properties": {
+                "DeviceId": "4",
+                "Timeout": "1000",
+                "TryReadWriteTimes": "3",
+                "ReadMode": "Block",
+                "InputContactReadBlockSettings": "[]",
+                "OutputCoilsReadBlockSettings": "[]",
+                "InputRegisterReadBlockSettings": "[]",
+                "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+              }
+            },
+            {
+              "ItemType": 4,
+              "Name": "TViTriThapNhatCuoiKhuon",
+              "Path": "Local Station/Channel1/TViTriThapNhatCuoiKhuon",
+              "Description": null,
+              "DisplayInfo": "3",
+              "Error": null,
+              "ConnectionStatus": 0,
+              "Childs": [
+                {
+                  "ItemType": 6,
+                  "Name": "Pv",
+                  "Path": "Local Station/Channel1/TViTriThapNhatCuoiKhuon/Pv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408193"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Sv",
+                  "Path": "Local Station/Channel1/TViTriThapNhatCuoiKhuon/Sv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408195"
+                  }
+                }
+              ],
+              "Properties": {
+                "DeviceId": "3",
+                "Timeout": "1000",
+                "TryReadWriteTimes": "3",
+                "ReadMode": "Block",
+                "InputContactReadBlockSettings": "[]",
+                "OutputCoilsReadBlockSettings": "[]",
+                "InputRegisterReadBlockSettings": "[]",
+                "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+              }
+            },
+            {
+              "ItemType": 4,
+              "Name": "TNuocGiaiNhietMam",
+              "Path": "Local Station/Channel1/TNuocGiaiNhietMam",
+              "Description": null,
+              "DisplayInfo": "6",
+              "Error": null,
+              "ConnectionStatus": 0,
+              "Childs": [
+                {
+                  "ItemType": 6,
+                  "Name": "Pv",
+                  "Path": "Local Station/Channel1/TNuocGiaiNhietMam/Pv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408193"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Sv",
+                  "Path": "Local Station/Channel1/TNuocGiaiNhietMam/Sv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408195"
+                  }
+                }
+              ],
+              "Properties": {
+                "DeviceId": "6",
+                "Timeout": "1000",
+                "TryReadWriteTimes": "3",
+                "ReadMode": "Block",
+                "InputContactReadBlockSettings": "[]",
+                "OutputCoilsReadBlockSettings": "[]",
+                "InputRegisterReadBlockSettings": "[]",
+                "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+              }
+            },
+            {
+              "ItemType": 4,
+              "Name": "TSauLoXaTruocKhi",
+              "Path": "Local Station/Channel1/TSauLoXaTruocKhi",
+              "Description": null,
+              "DisplayInfo": "7",
+              "Error": null,
+              "ConnectionStatus": 0,
+              "Childs": [
+                {
+                  "ItemType": 6,
+                  "Name": "Pv",
+                  "Path": "Local Station/Channel1/TSauLoXaTruocKhi/Pv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408193"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Sv",
+                  "Path": "Local Station/Channel1/TSauLoXaTruocKhi/Sv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408195"
+                  }
+                }
+              ],
+              "Properties": {
+                "DeviceId": "7",
+                "Timeout": "1000",
+                "TryReadWriteTimes": "3",
+                "ReadMode": "Block",
+                "InputContactReadBlockSettings": "[]",
+                "OutputCoilsReadBlockSettings": "[]",
+                "InputRegisterReadBlockSettings": "[]",
+                "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"408193\",\r\n    \"EndAddress\": \"408195\"\r\n  }\r\n]"
+              }
+            },
+            {
+              "ItemType": 4,
+              "Name": "TKhongKhiTrongLo",
+              "Path": "Local Station/Channel1/TKhongKhiTrongLo",
+              "Description": null,
+              "DisplayInfo": "8",
+              "Error": null,
+              "ConnectionStatus": 0,
+              "Childs": [
+                {
+                  "ItemType": 6,
+                  "Name": "Pv",
+                  "Path": "Local Station/Channel1/TKhongKhiTrongLo/Pv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408193"
+                  }
+                },
+                {
+                  "ItemType": 6,
+                  "Name": "Sv",
+                  "Path": "Local Station/Channel1/TKhongKhiTrongLo/Sv",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Short",
+                    "Address": "408195"
+                  }
+                }
+              ],
+              "Properties": {
+                "DeviceId": "8",
+                "Timeout": "1000",
+                "TryReadWriteTimes": "3",
+                "ReadMode": "Block",
+                "InputContactReadBlockSettings": "[]",
+                "OutputCoilsReadBlockSettings": "[]",
+                "InputRegisterReadBlockSettings": "[]",
+                "HoldingRegisterReadBlockSettings": "[]"
+              }
+            },
+            {
+              "ItemType": 4,
+              "Name": "InvtBomNuoc",
+              "Path": "Local Station/Channel1/InvtBomNuoc",
+              "Description": null,
+              "DisplayInfo": "9",
+              "Error": null,
+              "ConnectionStatus": 0,
+              "Childs": [
+                {
+                  "ItemType": 6,
+                  "Name": "f",
+                  "Path": "Local Station/Channel1/InvtBomNuoc/f",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "400201"
+                  }
+                }
+              ],
+              "Properties": {
+                "DeviceId": "9",
+                "Timeout": "1000",
+                "TryReadWriteTimes": "3",
+                "ReadMode": "Block",
+                "InputContactReadBlockSettings": "[]",
+                "OutputCoilsReadBlockSettings": "[]",
+                "InputRegisterReadBlockSettings": "[]",
+                "HoldingRegisterReadBlockSettings": "[\r\n  {\r\n    \"AddressType\": 4,\r\n    \"Enabled\": true,\r\n    \"StartAddress\": \"400001\",\r\n    \"EndAddress\": \"400002\"\r\n  }\r\n]"
+              }
+            },
+            {
+              "ItemType": 4,
+              "Name": "InvtXuongMam",
+              "Path": "Local Station/Channel1/InvtXuongMam",
+              "Description": null,
+              "DisplayInfo": "10",
+              "Error": null,
+              "ConnectionStatus": 0,
+              "Childs": [
+                {
+                  "ItemType": 6,
+                  "Name": "f",
+                  "Path": "Local Station/Channel1/InvtXuongMam/f",
+                  "Description": null,
+                  "DisplayInfo": null,
+                  "Error": null,
+                  "ConnectionStatus": 0,
+                  "Childs": [],
+                  "Properties": {
+                    "DataType": "Word",
+                    "Address": "400201"
+                  }
+                }
+              ],
+              "Properties": {
+                "DeviceId": "10",
+                "Timeout": "1000",
+                "TryReadWriteTimes": "3",
+                "ReadMode": "Block",
+                "InputContactReadBlockSettings": "[]",
+                "OutputCoilsReadBlockSettings": "[]",
+                "InputRegisterReadBlockSettings": "[]",
+                "HoldingRegisterReadBlockSettings": "[]"
+              }
+            }
+          ],
+          "Properties": {
+            "Port": "COM11",
+            "ScanRate": "100",
+            "Baudrate": "9600",
+            "Parity": "None",
+            "StopBits": "One",
+            "DelayBetweenPool": "5",
+            "MaxWritesCount": "10",
+            "DataBits": "8"
+          }
+        }
+      ],
+      "Properties": {}
+    }
+  ],
+  "Properties": {}
+}
