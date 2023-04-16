@@ -26,6 +26,33 @@
             Allows connections to a user account set with the mysql_clear_password authentication plugin.
             </summary>
         </member>
+        <member name="T:MySql.Data.MySqlClient.Authentication.GssapiMechanism">
+            <summary>
+            The GSSAPI mechanism.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.GssapiMechanism.#ctor(System.String,System.String)">
+            <summary>
+            Obtain credentials to be used to create a security context
+            </summary>
+            <param name="username">username</param>
+            <param name="password">password</param>
+            <param name="host">host</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.GssapiMechanism.Challenge(System.Byte[])">
+            <summary>
+            Processes the challenge data.
+            </summary>
+            <param name="data">A byte array containing the challenge data from the server</param>
+            <returns>A byte array containing the response to be sent to the server</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.GssapiMechanism.DoFinalHandshake(System.Byte[])">
+            <summary>
+            Security context already established.
+            </summary>
+            <param name="message">A byte array containing the challenge data from the server</param>
+            <returns>A non-null byte array containing the response to be sent to the server</returns>
+        </member>
         <member name="T:MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin">
             <summary>
             Defines the default behavior for an authentication plugin.
@@ -128,6 +155,44 @@
             Allows connections to a user account set with the authentication_ldap_sasl authentication plugin.
             </summary>
         </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.MySqlSASLPlugin.IsNonAsciiSpace(System.Char)">
+            <summary>
+            Determines if the character is a non-ASCII space.
+            </summary>
+            <remarks>
+            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-C.1.2
+            </remarks>
+            <returns><c>true</c> if the character is a non-ASCII space; otherwise, <c>false</c>.</returns>
+            <param name="c">The character.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.MySqlSASLPlugin.IsCommonlyMappedToNothing(System.Char)">
+            <summary>
+            Determines if the character is commonly mapped to nothing.
+            </summary>
+            <remarks>
+            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-B.1
+            </remarks>
+            <returns><c>true</c> if the character is commonly mapped to nothing; otherwise, <c>false</c>.</returns>
+            <param name="c">The character.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.MySqlSASLPlugin.IsProhibited(System.String,System.Int32)">
+            <summary>
+            Determines if the character is prohibited.
+            </summary>
+            <remarks>
+            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-C.3
+            </remarks>
+            <returns><c>true</c> if the character is prohibited; otherwise, <c>false</c>.</returns>
+            <param name="s">The string.</param>
+            <param name="index">The character index.</param>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.MySqlSASLPlugin.SaslPrep(System.String)">
+            <summary>
+            Prepares the user name or password string.
+            </summary>
+            <param name="s">The string to prepare.</param>
+            <returns>The prepared string.</returns>
+        </member>
         <member name="T:MySql.Data.MySqlClient.Authentication.MySqlNativePasswordPlugin">
             <summary>
             Allows connections to a user account set with the mysql_native_password authentication plugin.
@@ -142,13 +207,34 @@
             <param name="seedBytes"></param>
             <returns></returns>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.ClientInitial">
+        <member name="T:MySql.Data.MySqlClient.Authentication.ScramBase">
+            <summary>
+            Base class to handle SCRAM authentication methods
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Authentication.ScramBase.AuthState">
+            <summary>
+            Defines the state of the authentication process.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Authentication.ScramBase.MechanismName">
+            <summary>
+            Gets the name of the method.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.Challenge(System.Byte[])">
+            <summary>
+            Parses the server's challenge token and returns the next challenge response.
+            </summary>
+            <returns>The next challenge response.</returns>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.ClientInitial">
             <summary>
             Builds up the client-first message.
             </summary>
             <returns>An array of bytes containig the client-first message.</returns>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.ProcessServerResponse(System.Byte[])">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.ProcessServerResponse(System.Byte[])">
             <summary>
             Processes the server response from the client-first message and 
             builds up the client-final message.
@@ -156,65 +242,20 @@
             <param name="data">Response from the server.</param>
             <returns>An array of bytes containing the client-final message.</returns>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.ValidateAuth(System.Byte[])">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.ValidateAuth(System.Byte[])">
             <summary>
             Validates the server response.
             </summary>
             <param name="data">Server-final message</param>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.SaslPrep(System.String)">
-            <summary>
-            Prepares the user name or password string.
-            </summary>
-            <param name="s">The string to prepare.</param>
-            <returns>The prepared string.</returns>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.IsNonAsciiSpace(System.Char)">
-            <summary>
-            Determines if the character is a non-ASCII space.
-            </summary>
-            <remarks>
-            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-C.1.2
-            </remarks>
-            <returns><c>true</c> if the character is a non-ASCII space; otherwise, <c>false</c>.</returns>
-            <param name="c">The character.</param>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.IsCommonlyMappedToNothing(System.Char)">
-            <summary>
-            Determines if the character is commonly mapped to nothing.
-            </summary>
-            <remarks>
-            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-B.1
-            </remarks>
-            <returns><c>true</c> if the character is commonly mapped to nothing; otherwise, <c>false</c>.</returns>
-            <param name="c">The character.</param>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.IsProhibited(System.String,System.Int32)">
-            <summary>
-            Determines if the character is prohibited.
-            </summary>
-            <remarks>
-            This list was obtained from http://tools.ietf.org/html/rfc3454#appendix-C.3
-            </remarks>
-            <returns><c>true</c> if the character is prohibited; otherwise, <c>false</c>.</returns>
-            <param name="s">The string.</param>
-            <param name="index">The character index.</param>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.CreateHMACSHA1(System.Byte[])">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.CreateHMAC(System.Byte[])">
             <summary>
             Creates the HMAC SHA1 context.
             </summary>
             <returns>The HMAC context.</returns>
             <param name="key">The secret key.</param>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.Xor(System.Byte[],System.Byte[])">
-            <summary>
-            Applies the exclusive-or operation to combine two octet strings.
-            </summary>
-            <param name="a">The alpha component.</param>
-            <param name="b">The blue component.</param>
-        </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.HMAC(System.Byte[],System.Byte[])">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.HMAC(System.Byte[],System.Byte[])">
             <summary>
             Apply the HMAC keyed algorithm.
             </summary>
@@ -222,16 +263,66 @@
             <param name="key">The key.</param>
             <param name="str">The string.</param>
         </member>
-        <member name="M:MySql.Data.MySqlClient.Authentication.ScramMethod.Hash(System.Byte[])">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.Hash(System.Byte[])">
             <summary>
             Applies the cryptographic hash function.
             </summary>
             <returns>The results of the hash.</returns>
             <param name="str">The string.</param>
         </member>
-        <member name="T:MySql.Data.MySqlClient.Authentication.AuthState">
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramBase.Xor(System.Byte[],System.Byte[])">
             <summary>
-            Defines the state of the authentication process.
+            Applies the exclusive-or operation to combine two octet strings.
+            </summary>
+            <param name="a">The alpha component.</param>
+            <param name="b">The blue component.</param>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Authentication.ScramSha1Mechanism">
+            <summary>
+            The SCRAM-SHA-1 SASL mechanism.
+            </summary>
+            <remarks>
+            A salted challenge/response SASL mechanism that uses the HMAC SHA-1 algorithm.
+            </remarks>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramSha1Mechanism.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.Authentication.ScramSha1Mechanism"/> class.
+            </summary>
+            <remarks>
+            Creates a new SCRAM-SHA-1 SASL context.
+            </remarks>
+            <param name="username">The user name.</param>
+            <param name="password">The password.</param>
+            <param name="host">The host.</param>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Authentication.ScramSha1Mechanism.MechanismName">
+            <summary>
+            Gets the name of the method.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Authentication.ScramSha256Mechanism">
+            <summary>
+            The SCRAM-SHA-256 SASL mechanism.
+            </summary>
+            <remarks>
+            A salted challenge/response SASL mechanism that uses the HMAC SHA-256 algorithm.
+            </remarks>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Authentication.ScramSha256Mechanism.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MySql.Data.MySqlClient.Authentication.ScramSha256Mechanism"/> class.
+            </summary>
+            <remarks>
+            Creates a new SCRAM-SHA-256 SASL context.
+            </remarks>
+            <param name="username">The user name.</param>
+            <param name="password">The password.</param>
+            <param name="host">The host.</param>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Authentication.ScramSha256Mechanism.MechanismName">
+            <summary>
+            Gets the name of the method.
             </summary>
         </member>
         <member name="T:MySql.Data.MySqlClient.Authentication.Sha256AuthenticationPlugin">
@@ -1574,11 +1665,6 @@
       </code>
     </example>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlConnection._sshHandler">
-            <summary>
-            The client used to handle SSH connections.
-            </summary>
-        </member>
         <member name="E:MySql.Data.MySqlClient.MySqlConnection.InfoMessage">
             <summary>Occurs when MySQL returns warnings as a result of executing a command or query.</summary><remarks>
     </remarks>
@@ -1685,7 +1771,6 @@
     </remarks><example>
     </example><param name="connectionString">
       The connection properties used to open the MySQL database.
-      <para>The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.</para>
     </param>
         </member>
         <member name="P:MySql.Data.MySqlClient.MySqlConnection.IsClone">
@@ -1956,7 +2041,6 @@
                 In Unix environment with Mono, this can be a fully qualified path to MySQL socket filename. With this configuration, the Unix socket will be used instead of TCP/IP socket.
                 Currently only a single socket name can be given so accessing MySQL in a replicated environment using Unix sockets is not currently supported.
               </para>
-              <para>The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.</para>
             </td>
           </tr>
           <tr>
@@ -2091,18 +2175,6 @@
             <td>25</td>
             <td>
               How many stored procedure definitions can be held in the cache
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Ignore Prepare
-            </td>
-            <td>true</td>
-            <td>
-              Instructs the provider to ignore any attempts to prepare commands.  This option
-              was added to allow a user to disable prepared statements in an entire application
-              without modifying the code.  A user might want to do this if errors or bugs are
-              encountered with MySQL prepared statements.
             </td>
           </tr>
           <tr>
@@ -6227,7 +6299,6 @@
         <member name="P:MySql.Data.MySqlClient.MySqlBaseConnectionStringBuilder.Server">
             <summary>
             Gets or sets the name of the server.
-            <para>The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.</para>
             </summary>
             <value>The server.</value>
         </member>
@@ -6305,36 +6376,6 @@
         <member name="P:MySql.Data.MySqlClient.MySqlBaseConnectionStringBuilder.SslCert">
             <summary>
             Gets or sets the path to a local certificate file in PEM format to use for establishing an encrypted connection.
-            </summary>
-        </member>
-        <member name="P:MySql.Data.MySqlClient.MySqlBaseConnectionStringBuilder.SshHostName">
-            <summary>
-            Gets or sets the name of the SSH server.
-            </summary>
-        </member>
-        <member name="P:MySql.Data.MySqlClient.MySqlBaseConnectionStringBuilder.SshPort">
-            <summary>
-            Gets or sets the port number to use when authenticating to the SSH server.
-            </summary>
-        </member>
-        <member name="P:MySql.Data.MySqlClient.MySqlBaseConnectionStringBuilder.SshUserName">
-            <summary>
-            Gets or sets the user name to authenticate to the SSH server.
-            </summary>
-        </member>
-        <member name="P:MySql.Data.MySqlClient.MySqlBaseConnectionStringBuilder.SshPassword">
-            <summary>
-            Gets or sets the password to authenticate to the SSH server.
-            </summary>
-        </member>
-        <member name="P:MySql.Data.MySqlClient.MySqlBaseConnectionStringBuilder.SshKeyFile">
-            <summary>
-            Gets or sets the SSH key file to authenticate to the SSH server.
-            </summary>
-        </member>
-        <member name="P:MySql.Data.MySqlClient.MySqlBaseConnectionStringBuilder.SshPassphrase">
-            <summary>
-            Gets or sets the passphrase of the key file to authenticate to the SSH server.
             </summary>
         </member>
         <member name="P:MySql.Data.MySqlClient.MySqlBaseConnectionStringBuilder.Keepalive">
@@ -6528,12 +6569,6 @@
         <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.UsePerformanceMonitor">
             <summary>
             Gets or sets a boolean value that indicates if the performance monitor hooks should be enabled.
-            </summary>
-            <remarks>Default value is <c>false</c>.</remarks>
-        </member>
-        <member name="P:MySql.Data.MySqlClient.MySqlConnectionStringBuilder.IgnorePrepare">
-            <summary>
-            Gets or sets a boolean value that indicates if calls to the Prepare method should be ignored.
             </summary>
             <remarks>Default value is <c>false</c>.</remarks>
         </member>
@@ -7131,6 +7166,11 @@
         <member name="T:MySql.Data.MySqlClient.CompressionAlgorithms">
             <summary>
             Defines the compression algorithms that can be used.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.CloseNotification">
+            <summary>
+            The warnings that cause a connection to close.
             </summary>
         </member>
         <member name="T:MySql.Data.MySqlClient.MySqlError">
@@ -7919,25 +7959,25 @@
             <summary></summary>
             <remarks>ER_DUMP_NOT_IMPLEMENTED</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.FlushMasterBinLogClosed">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.FlushSourceBinLogClosed">
             <summary></summary>
-            <remarks>ER_FLUSH_MASTER_BINLOG_CLOSED</remarks>
+            <remarks>ER_FLUSH_SOURCE_BINLOG_CLOSED</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.IndexRebuild">
             <summary></summary>
             <remarks>ER_INDEX_REBUILD</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MasterError">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SourceError">
             <summary></summary>
-            <remarks>ER_MASTER</remarks>
+            <remarks>ER_SOURCE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MasterNetRead">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SourceNetRead">
             <summary></summary>
-            <remarks>ER_MASTER_NET_READ</remarks>
+            <remarks>ER_SOURCE_NET_READ</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MasterNetWrite">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SourceNetWrite">
             <summary></summary>
-            <remarks>ER_MASTER_NET_WRITE</remarks>
+            <remarks>ER_SOURCE_NET_WRITE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.FullTextMatchingKeyNotFound">
             <summary></summary>
@@ -7967,25 +8007,25 @@
             <summary></summary>
             <remarks>ER_TRANS_CACHE_FULL</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveMustStop">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaMustStop">
             <summary></summary>
-            <remarks>ER_SLAVE_MUST_STOP</remarks>
+            <remarks>ER_REPLICA_MUST_STOP</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveNotRunning">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaNotRunning">
             <summary></summary>
-            <remarks>ER_SLAVE_NOT_RUNNING</remarks>
+            <remarks>ER_REPLICA_NOT_RUNNING</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.BadSlave">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.BadReplica">
             <summary></summary>
-            <remarks>ER_BAD_SLAVE</remarks>
+            <remarks>ER_BAD_REPLICA</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MasterInfo">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SourceInfo">
             <summary></summary>
-            <remarks>ER_MASTER_INFO</remarks>
+            <remarks>ER_SOURCE_INFO</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveThread">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaThread">
             <summary></summary>
-            <remarks>ER_SLAVE_THREAD</remarks>
+            <remarks>ER_REPLICA_THREAD</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.TooManyUserConnections">
             <summary></summary>
@@ -8047,13 +8087,13 @@
             <summary></summary>
             <remarks>ER_ROW_IS_REFERENCED</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ConnectToMaster">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ConnectToSource">
             <summary></summary>
-            <remarks>ER_CONNECT_TO_MASTER</remarks>
+            <remarks>ER_CONNECT_TO_SOURCE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.QueryOnMaster">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.QueryOnSource">
             <summary></summary>
-            <remarks>ER_QUERY_ON_MASTER</remarks>
+            <remarks>ER_QUERY_ON_SOURCE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ErrorWhenExecutingCommand">
             <summary></summary>
@@ -8119,13 +8159,13 @@
             <summary></summary>
             <remarks>ER_NOT_SUPPORTED_YET</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MasterFatalErrorReadingBinLog">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SourceFatalErrorReadingBinLog">
             <summary></summary>
-            <remarks>ER_MASTER_FATAL_ERROR_READING_BINLOG</remarks>
+            <remarks>ER_SOURCE_FATAL_ERROR_READING_BINLOG</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveIgnoredTable">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaIgnoredTable">
             <summary></summary>
-            <remarks>ER_SLAVE_IGNORED_TABLE</remarks>
+            <remarks>ER_REPLICA_IGNORED_TABLE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.IncorrectGlobalLocalVariable">
             <summary></summary>
@@ -8191,13 +8231,13 @@
             <summary></summary>
             <remarks>ER_COLLATION_CHARSET_MISMATCH</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveWasRunning">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaWasRunning">
             <summary></summary>
-            <remarks>ER_SLAVE_WAS_RUNNING</remarks>
+            <remarks>ER_REPLICA_WAS_RUNNING</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveWasNotRunning">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaWasNotRunning">
             <summary></summary>
-            <remarks>ER_SLAVE_WAS_NOT_RUNNING</remarks>
+            <remarks>ER_REPLICA_WAS_NOT_RUNNING</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.TooBigForUncompress">
             <summary></summary>
@@ -8271,9 +8311,9 @@
             <summary></summary>
             <remarks>ER_UNKNOWN_COLLATION</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveIgnoreSSLParameters">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaIgnoreSSLParameters">
             <summary></summary>
-            <remarks>ER_SLAVE_IGNORED_SSL_PARAMS</remarks>
+            <remarks>ER_REPLICA_IGNORED_SSL_PARAMS</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ServerIsInSecureAuthMode">
             <summary></summary>
@@ -8283,13 +8323,13 @@
             <summary></summary>
             <remarks>ER_WARN_FIELD_RESOLVED</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.BadSlaveUntilCondition">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.BadReplicaUntilCondition">
             <summary></summary>
-            <remarks>ER_BAD_SLAVE_UNTIL_COND</remarks>
+            <remarks>ER_BAD_REPLICA_UNTIL_COND</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MissingSkipSlave">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.MissingSkipReplica">
             <summary></summary>
-            <remarks>ER_MISSING_SKIP_SLAVE</remarks>
+            <remarks>ER_MISSING_SKIP_REPLICA</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ErrorUntilConditionIgnored">
             <summary></summary>
@@ -9535,9 +9575,9 @@
             <summary></summary>
             <remarks>ER_EVENT_CANNOT_ALTER_IN_THE_PAST</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveIncident">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaIncident">
             <summary></summary>
-            <remarks>ER_SLAVE_INCIDENT</remarks>
+            <remarks>ER_REPLICA_INCIDENT</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.NoPartitionForGivenValueSilent">
             <summary></summary>
@@ -9547,25 +9587,25 @@
             <summary></summary>
             <remarks>ER_BINLOG_UNSAFE_STATEMENT</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveFatalError">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaFatalError">
             <summary></summary>
-            <remarks>ER_SLAVE_FATAL_ERROR</remarks>
+            <remarks>ER_REPLICA_FATAL_ERROR</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveRelayLogReadFailure">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaRelayLogReadFailure">
             <summary></summary>
-            <remarks>ER_SLAVE_RELAY_LOG_READ_FAILURE</remarks>
+            <remarks>ER_REPLICA_RELAY_LOG_READ_FAILURE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveRelayLogWriteFailure">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaRelayLogWriteFailure">
             <summary></summary>
-            <remarks>ER_SLAVE_RELAY_LOG_WRITE_FAILURE</remarks>
+            <remarks>ER_REPLICA_RELAY_LOG_WRITE_FAILURE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveCreateEventFailure">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaCreateEventFailure">
             <summary></summary>
-            <remarks>ER_SLAVE_CREATE_EVENT_FAILURE</remarks>
+            <remarks>ER_REPLICA_CREATE_EVENT_FAILURE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveMasterComFailure">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaSourceComFailure">
             <summary></summary>
-            <remarks>ER_SLAVE_MASTER_COM_FAILURE</remarks>
+            <remarks>ER_REPLICA_SOURCE_COM_FAILURE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.BinLogLoggingImpossible">
             <summary></summary>
@@ -9607,17 +9647,17 @@
             <summary></summary>
             <remarks>ER_CANT_CREATE_SROUTINE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveAmbiguousExecMode">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaAmbiguousExecMode">
             <summary></summary>
-            <remarks>ER_SLAVE_AMBIGOUS_EXEC_MODE</remarks>
+            <remarks>ER_REPLICA_AMBIGOUS_EXEC_MODE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.NoFormatDescriptionEventBeforeBinLogStatement">
             <summary></summary>
             <remarks>ER_NO_FORMAT_DESCRIPTION_EVENT_BEFORE_BINLOG_STATEMENT</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveCorruptEvent">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaCorruptEvent">
             <summary></summary>
-            <remarks>ER_SLAVE_CORRUPT_EVENT</remarks>
+            <remarks>ER_REPLICA_CORRUPT_EVENT</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.LoadDataInvalidColumn">
             <summary></summary>
@@ -9643,9 +9683,9 @@
             <summary></summary>
             <remarks>ER_DELAYED_NOT_SUPPORTED</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.WarningNoMasterInfo">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.WarningNoSourceInfo">
             <summary></summary>
-            <remarks>WARN_NO_MASTER_INFO</remarks>
+            <remarks>WARN_NO_SOURCE_INFO</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.WarningOptionIgnored">
             <summary></summary>
@@ -9667,13 +9707,13 @@
             <summary></summary>
             <remarks>ER_WARN_ENGINE_TRANSACTION_ROLLBACK</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveHeartbeatFailure">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaHeartbeatFailure">
             <summary></summary>
-            <remarks>ER_SLAVE_HEARTBEAT_FAILURE</remarks>
+            <remarks>ER_REPLICA_HEARTBEAT_FAILURE</remarks>
         </member>
-        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.SlaveHeartbeatValueOutOfRange">
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ReplicaHeartbeatValueOutOfRange">
             <summary></summary>
-            <remarks>ER_SLAVE_HEARTBEAT_VALUE_OUT_OF_RANGE</remarks>
+            <remarks>ER_REPLICA_HEARTBEAT_VALUE_OUT_OF_RANGE</remarks>
         </member>
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.NDBReplicationSchemaError">
             <summary></summary>
@@ -9742,6 +9782,10 @@
         <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ErrorLast">
             <summary></summary>
             <remarks>ER_ERROR_LAST</remarks>
+        </member>
+        <member name="F:MySql.Data.MySqlClient.MySqlErrorCode.ErrorClientInteractionTimeout">
+            <summary></summary>
+            <remarks>ER_CLIENT_INTERACTION_TIMEOUT</remarks>
         </member>
         <member name="M:MySql.Data.MySqlClient.MySqlPacket.WriteInteger(System.Int64,System.Int32)">
             <summary>
@@ -10258,7 +10302,12 @@
         </member>
         <member name="P:MySql.Data.MySqlClient.ReplicationServerConfigurationElement.IsMaster">
             <summary>
-            Gets or sets whether the replication server is configured as master.
+            Gets or sets whether the replication server is configured as source.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.ReplicationServerConfigurationElement.IsSource">
+            <summary>
+            Gets or sets whether the replication server is configured as source.
             </summary>
         </member>
         <member name="P:MySql.Data.MySqlClient.ReplicationServerConfigurationElement.ConnectionString">
@@ -10298,7 +10347,7 @@
             Gets the next server from a replication group
             </summary>
             <param name="groupName">Group name</param>
-            <param name="isMaster">True if the server to return must be a master</param>
+            <param name="isSource">True if the server to return must be a source</param>
             <returns>Replication Server defined by the Load Balancing plugin</returns>
         </member>
         <member name="M:MySql.Data.MySqlClient.Replication.ReplicationManager.GetGroup(System.String)">
@@ -10320,7 +10369,7 @@
             Assigns a new server driver to the connection object
             </summary>
             <param name="groupName">Group name</param>
-            <param name="master">True if the server connection to assign must be a master</param>
+            <param name="source">True if the server connection to assign must be a source</param>
             <param name="connection">MySqlConnection object where the new driver will be assigned</param>
         </member>
         <member name="T:MySql.Data.MySqlClient.Replication.ReplicationRoundRobinServerGroup">
@@ -10332,7 +10381,7 @@
             <summary>
             Gets an available server based on Round Robin load balancing.
             </summary>
-            <param name="isMaster">Flag indicating if the server to return must be a master.</param>
+            <param name="isSource">Flag indicating if the server to return must be a source.</param>
             <returns>A <see cref="T:MySql.Data.MySqlClient.Replication.ReplicationServer"/> object representing the next available server.</returns>
         </member>
         <member name="T:MySql.Data.MySqlClient.Replication.ReplicationServer">
@@ -10347,7 +10396,12 @@
         </member>
         <member name="P:MySql.Data.MySqlClient.Replication.ReplicationServer.IsMaster">
             <summary>
-            Gets a value indicating whether the server is master or slave.
+            Gets a value indicating whether the server is source or replica.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Replication.ReplicationServer.IsSource">
+            <summary>
+            Gets a value indicating whether the server is source or replica.
             </summary>
         </member>
         <member name="P:MySql.Data.MySqlClient.Replication.ReplicationServer.ConnectionString">
@@ -10394,7 +10448,7 @@
             Adds a server into the group.
             </summary>
             <param name="name">The server name.</param>
-            <param name="isMaster">A flag indicating if the server to add is master or slave.</param>
+            <param name="isSource">A flag indicating if the server to add is source or replica.</param>
             <param name="connectionString">The connection string used by this server.</param>
             <returns>A <see cref="T:MySql.Data.MySqlClient.Replication.ReplicationServer"/> object representing the recently added object.</returns>
         </member>
@@ -10415,7 +10469,7 @@
             <summary>
             Must be implemented. Defines the next server for a custom load balancing implementation.
             </summary>
-            <param name="isMaster">Defines if the server to return is a master or any.</param>
+            <param name="isSource">Defines if the server to return is a source or any.</param>
             <returns>The next server based on the load balancing implementation.
             Null if no available server is found.
             </returns>
@@ -10424,7 +10478,7 @@
             <summary>
             Defines the next server for a custom load balancing implementation.
             </summary>
-            <param name="isMaster">Defines if the server to return is a master or any.</param>
+            <param name="isSource">Defines if the server to return is a source or any.</param>
             <param name="settings">Currently not being used.</param>
             <returns>The next server based on the load balancing implementation.
             Null if no available server is found.
@@ -10949,6 +11003,554 @@
       </code>
     </example>
         </member>
+        <member name="T:MySql.Data.Authentication.GSSAPI.Const">
+            <summary>
+            GSS API constants
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Const.GssNtHostBasedServiceOid">
+            <summary>
+            GSS_C_NT_HOSTBASED_SERVICE (1.2.840.113554.1.2.1.4)
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Const.GssNtPrincipalNameOid">
+            <summary>
+            GSS_KRB5_NT_PRINCIPAL_NAME (1.2.840.113554.1.2.2.1)
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Const.GssNtUserNameOid">
+            <summary>
+            GSS_C_NT_USER_NAME (1.2.840.113554.1.2.1.1)
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Const.GssKrb5MechOid">
+            <summary>
+            GSS_KRB5_MECH_OID_DESC (1.2.840.113554.1.2.2)
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Const.GssKrb5MechOidSet">
+            <summary>
+            GSS_KRB5_MECH_OID_DESC Set
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Authentication.GSSAPI.GssContext">
+            <summary>
+            Defines a security context
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.GssContext.#ctor(System.String,MySql.Data.Authentication.GSSAPI.GssCredentials,MySql.Data.Authentication.GSSAPI.GssContextFlags)">
+            <summary>
+            Sets the main properties to create and initiate a security context.
+            </summary>
+            <param name="spn">Service Principal Name.</param>
+            <param name="credentials">Credentials.</param>
+            <param name="flags">Requested flags.</param>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.GssContext.InitSecContext(System.Byte[])">
+            <summary>
+            Initiate the security context
+            </summary>
+            <param name="token">Challenge received by the server.</param>
+            <returns>A byte array containing the response to be sent to the server</returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.GssContext.Unwrap(System.Byte[])">
+            <summary>
+            Unwrap a message.
+            </summary>
+            <param name="message">Message acquired from the server.</param>
+            <returns>Unwrapped message.</returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.GssContext.Wrap(System.Byte[])">
+            <summary>
+            Wrap a message.
+            </summary>
+            <param name="message">Message to be wrapped.</param>
+            <returns>A byte array containing the wrapped message.</returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.GssContext.MarshalOutputToken(MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct)">
+            <summary>
+            Allocate a clr byte array and copy the token data over
+            </summary>
+            <param name="gssToken">Buffer.</param>
+            <returns>A byte array</returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.GssContext.Cleanup">
+            <summary>
+            Cleanups unmanaged resources
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.GssContextFlags.None">
+            <summary>
+            No flags provided
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.GssContextFlags.Deleg">
+            <summary>
+            Delegates credentials to a remote peer. Do not delegate the credentials if the value is false.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.GssContextFlags.Mutual">
+            <summary>
+            Requests that the peer authenticate itself. If false, authenticate to the remote peer only.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.GssContextFlags.Replay">
+            <summary>
+            Enables replay detection for messages protected with gss_wrap(3GSS) or gss_get_mic(3GSS). Do not attempt to detect replayed messages if false.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.GssContextFlags.Sequence">
+            <summary>
+            Enables detection of out-of-sequence protected messages. Do not attempt to detect out-of-sequence messages if false.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.GssContextFlags.Conf">
+            <summary>
+            Requests that confidential service be made available by means of gss_wrap(3GSS). If false, no per-message confidential service is required.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.GssContextFlags.Integ">
+            <summary>
+            Requests that integrity service be made available by means of gss_wrap(3GSS) or gss_get_mic(3GSS). If false, no per-message integrity service is required.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.GssContextFlags.Anon">
+            <summary>
+            Does not reveal the initiator's identify to the acceptor. Otherwise, authenticate normally.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.GssContextFlags.ProtReady">
+            <summary>
+            (Returned only) If true, the protection services specified by the states of GSS_C_CONF_FLAG and GSS_C_INTEG_FLAG are available 
+            if the accompanying major status return value is either GSS_S_COMPLETE or GSS_S_CONTINUE_NEEDED. If false, the protection services are available 
+            only if the accompanying major status return value is GSS_S_COMPLETE.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.GssContextFlags.Trans">
+            <summary>
+            (Returned only) If true, the resultant security context may be transferred to other processes by means of a call to gss_export_sec_context(3GSS). If false, the security context cannot be transferred.
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Authentication.GSSAPI.GssCredentials">
+            <summary>
+            Credentials to use to establish the context
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.GssCredentials.#ctor(System.String,System.String,MySql.Data.Authentication.GSSAPI.CredentialUsage)">
+            <summary>
+            Acquires credentials for the supplied principal using the supplied password
+            </summary>
+            <param name="username">Username</param>
+            <param name="password">Password</param>
+            <param name="usage">GSS_C_BOTH - Credentials may be used either to initiate or accept security contexts. 
+            GSS_C_INITIATE - Credentials will only be used to initiate security contexts. 
+            GSS_C_ACCEPT - Credentials will only be used to accept security contexts.</param>
+            <returns>An object containing the credentials</returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.GssCredentials.#ctor(System.String,MySql.Data.Authentication.GSSAPI.CredentialUsage)">
+            <summary>
+            Acquires credentials for the supplied principal using material stored in a valid keytab
+            </summary>
+            <param name="username">Username</param>
+            <param name="usage">GSS_C_BOTH - Credentials may be used either to initiate or accept security contexts. 
+            GSS_C_INITIATE - Credentials will only be used to initiate security contexts. 
+            GSS_C_ACCEPT - Credentials will only be used to accept security contexts.</param>
+            <returns>An object containing the credentials</returns>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct.length">
+            size_t->unsigned int
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct.value">
+            void*
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Native.GssOidDescStruct.length">
+            OM_uint32->gss_uint32->unsigned int
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Native.GssOidDescStruct.elements">
+            void*
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Native.GssOidSetStruct.count">
+            OM_uint32->gss_uint32->unsigned int
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Native.GssOidSetStruct.elements">
+            void*
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Native.NativeMethods.gss_import_name(System.UInt32@,MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct@,MySql.Data.Authentication.GSSAPI.Native.GssOidDescStruct@,System.IntPtr@)">
+            <summary>
+            Converts a contiguous string name to GSS_API internal format
+            <para>The gss_import_name() function converts a contiguous string name to internal form. In general, 
+            the internal name returned by means of the output_name parameter will not be a mechanism name; the exception to this is if the input_name_type 
+            indicates that the contiguous string provided by means of the input_name_buffer parameter is of type GSS_C_NT_EXPORT_NAME, in which case, 
+            the returned internal name will be a mechanism name for the mechanism that exported the name.</para>
+            </summary>
+            <param name="minorStatus">Status code returned by the underlying mechanism.</param>
+            <param name="inputNameBuffer">The gss_buffer_desc structure containing the name to be imported.</param>
+            <param name="inputNameType">A gss_OID that specifies the format that the input_name_buffer is in.</param>
+            <param name="outputName">The gss_name_t structure to receive the returned name in internal form. Storage associated with this name must be freed by the application after use with a call to gss_release_name().</param>
+            <returns>
+            <para>The gss_import_name() function may return the following status codes:</para>
+            <para>GSS_S_COMPLETE: The gss_import_name() function completed successfully.</para>
+            <para>GSS_S_BAD_NAMETYPE: The input_name_type was unrecognized.</para>
+            <para>GSS_S_BAD_NAME: The input_name parameter could not be interpreted as a name of the specified type.</para>
+            <para>GSS_S_BAD_MECH: The input_name_type was GSS_C_NT_EXPORT_NAME, but the mechanism contained within the input_name is not supported.</para>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Native.NativeMethods.gss_acquire_cred(System.UInt32@,System.IntPtr,System.UInt32,MySql.Data.Authentication.GSSAPI.Native.GssOidSetStruct@,System.Int32,System.IntPtr@,System.IntPtr,System.UInt32@)">
+            <summary>
+            Allows an application to acquire a handle for a pre-existing credential by name. GSS-API implementations must impose a local access-control
+            policy on callers of this routine to prevent unauthorized callers from acquiring credentials to which they are not entitled. 
+            This routine is not intended to provide a "login to the network" function, as such a function would involve the creation of new credentials 
+            rather than merely acquiring a handle to existing credentials
+            </summary>
+            <param name="minorStatus">Mechanism specific status code.</param>
+            <param name="desiredName">Name of principal whose credential should be acquired.</param>
+            <param name="timeRequired">Number of seconds that credentials should remain valid. 
+            Specify GSS_C_INDEFINITE to request that the credentials have the maximum permitted lifetime.</param>
+            <param name="desiredMechanisms">Set of underlying security mechanisms that may be used. 
+            GSS_C_NO_OID_SET may be used to obtain an implementation-specific default.</param>
+            <param name="credentialUsage">GSS_C_BOTH - Credentials may be used either to initiate or accept security contexts. 
+            GSS_C_INITIATE - Credentials will only be used to initiate security contexts. 
+            GSS_C_ACCEPT - Credentials will only be used to accept security contexts.</param>
+            <param name="credentialHandle">The returned credential handle. Resources associated with this credential handle must be released
+            by the application after use with a call to gss_release_cred().</param>
+            <param name="actualMech">The set of mechanisms for which the credential is valid. Storage associated with the returned OID-set must 
+            be released by the application after use with a call to gss_release_oid_set(). Specify NULL if not required.</param>
+            <param name="expiryTime">Actual number of seconds for which the returned credentials will remain valid. If the implementation does not 
+            support expiration of credentials, the value GSS_C_INDEFINITE will be returned. Specify NULL if not required.</param>
+            <returns>
+            <para>gss_acquire_cred() may return the following status codes:</para>
+            <para>GSS_S_COMPLETE: Successful completion.</para>
+            <para>GSS_S_BAD_MECH: Unavailable mechanism requested.</para>
+            <para> GSS_S_BAD_NAMETYPE: Type contained within desired_name parameter is not supported.</para>
+            <para>GSS_S_BAD_NAME: Value supplied for desired_name parameter is ill formed.</para>
+            <para>GSS_S_CREDENTIALS_EXPIRED: The credentials could not be acquired Because they have expired.</para>
+            <para>GSS_S_NO_CRED: No credentials were found for the specified name.</para>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Native.NativeMethods.gss_acquire_cred_with_password(System.UInt32@,System.IntPtr,MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct@,System.UInt32,MySql.Data.Authentication.GSSAPI.Native.GssOidSetStruct@,System.Int32,System.IntPtr@,System.IntPtr,System.UInt32@)">
+            <summary>
+            Acquires a credential for use in establishing a security context using a password.
+            </summary>
+            <param name="minorStatus">Mechanism specific status code.</param>
+            <param name="desiredName">Name of principal whose credential should be acquired.</param>
+            <param name="password">The password.</param>
+            <param name="timeRequired">Number of seconds that credentials should remain valid. 
+            Specify GSS_C_INDEFINITE to request that the credentials have the maximum permitted lifetime.</param>
+            <param name="desiredMechanisms">Set of underlying security mechanisms that may be used. 
+            GSS_C_NO_OID_SET may be used to obtain an implementation-specific default.</param>
+            <param name="credentialUsage">GSS_C_BOTH - Credentials may be used either to initiate or accept security contexts. 
+            GSS_C_INITIATE - Credentials will only be used to initiate security contexts. 
+            GSS_C_ACCEPT - Credentials will only be used to accept security contexts.</param>
+            <param name="credentialHandle">The returned credential handle. Resources associated with this credential handle must be released
+            by the application after use with a call to gss_release_cred().</param>
+            <param name="actualMechs">The set of mechanisms for which the credential is valid. Storage associated with the returned OID-set must 
+            be released by the application after use with a call to gss_release_oid_set(). Specify NULL if not required.</param>
+            <param name="expiryTime">Actual number of seconds for which the returned credentials will remain valid. If the implementation does not 
+            support expiration of credentials, the value GSS_C_INDEFINITE will be returned. Specify NULL if not required.</param>
+            <returns>
+            <para>gss_acquire_cred_with_password() may return the following status codes:</para>
+            <para>GSS_S_COMPLETE: Successful completion.</para>
+            <para>GSS_S_BAD_MECH: Unavailable mechanism requested.</para>
+            <para> GSS_S_BAD_NAMETYPE: Type contained within desired_name parameter is not supported.</para>
+            <para>GSS_S_BAD_NAME: Value supplied for desired_name parameter is ill formed.</para>
+            <para>GSS_S_CREDENTIALS_EXPIRED: The credentials could not be acquired Because they have expired.</para>
+            <para>GSS_S_NO_CRED: No credentials were found for the specified name.</para>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Native.NativeMethods.gss_init_sec_context(System.UInt32@,System.IntPtr,System.IntPtr@,System.IntPtr,MySql.Data.Authentication.GSSAPI.Native.GssOidDescStruct@,System.UInt32,System.UInt32,System.IntPtr,MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct@,System.IntPtr,MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct@,System.IntPtr,System.IntPtr)">
+            <summary>
+            Initiates the establishment of a security context between the application and a remote peer. 
+            Initially, the input_token parameter should be specified either as GSS_C_NO_BUFFER, or as a pointer to a gss_buffer_desc object whose length field 
+            contains the value zero. The routine may return a output_token which should be transferred to the peer application, where the peer application will 
+            present it to gss_accept_sec_context. If no token need be sent, gss_init_sec_context will indicate this by setting the length field of the output_token 
+            argument to zero. To complete the context establishment, one or more reply tokens may be required from the peer application; if so, gss_init_sec_context 
+            will return a status containing the supplementary information bit GSS_S_CONTINUE_NEEDED. In this case, gss_init_sec_context should be called again when the 
+            reply token is received from the peer application, passing the reply token to gss_init_sec_context via the input_token parameters.
+            </summary>
+            <param name="minorStatus">Mechanism specific status code.</param>
+            <param name="claimantCredHandle">Handle for credentials claimed. Supply GSS_C_NO_CREDENTIAL to act as a default initiator principal. 
+            If no default initiator is defined, the function will return GSS_S_NO_CRED.</param>
+            <param name="contextHandle">Context handle for new context. Supply GSS_C_NO_CONTEXT for first call; use value returned by first call in continuation calls. 
+            Resources associated with this context-handle must be released by the application after use with a call to gss_delete_sec_context().</param>
+            <param name="targetName">Name of target.</param>
+            <param name="mechType">Object ID of desired mechanism. Supply GSS_C_NO_OID to obtain an implementation specific default.</param>
+            <param name="reqFlags">Contains various independent flags, each of which requests that the context support a specific service option. 
+            Symbolic names are provided for each flag, and the symbolic names corresponding to the required flags should be logically-ORed together to form the bit-mask value.</param>
+            <param name="timeReq">Desired number of seconds for which context should remain valid. Supply 0 to request a default validity period.</param>
+            <param name="inputChanBindings">Application-specified bindings. Allows application to securely bind channel identification information to the security context. 
+            Specify GSS_C_NO_CHANNEL_BINDINGS if channel bindings are not used.</param>
+            <param name="inputToken">Token received from peer application. Supply GSS_C_NO_BUFFER, or a pointer to a buffer containing the value GSS_C_EMPTY_BUFFER on initial call.</param>
+            <param name="actualMechType">Actual mechanism used. The OID returned via this parameter will be a pointer to static storage that should be treated as read-only; 
+            In particular the application should not attempt to free it. Specify NULL if not required.</param>
+            <param name="outputToken">Token to be sent to peer application. If the length field of the returned buffer is zero, no token need be sent to the peer application. 
+            Storage associated with this buffer must be freed by the application after use with a call to gss_release_buffer().</param>
+            <param name="retFlags">Contains various independent flags, each of which indicates that the context supports a specific service option. 
+            Specify NULL if not required. Symbolic names are provided for each flag, and the symbolic names corresponding to the required flags should be 
+            logically-ANDed with the ret_flags value to test whether a given option is supported by the context.</param>
+            <param name="timeRec">Number of seconds for which the context will remain valid. If the implementation does not support context expiration,
+            the value GSS_C_INDEFINITE will be returned. Specify NULL if not required.</param>
+            <returns>
+            <para>gss_init_sec_context() may return the following status codes:</para>
+            <para></para>
+            <para>GSS_S_COMPLETE: Successful completion.</para>
+            <para>GSS_S_CONTINUE_NEEDED: A token from the peer application is required to complete the context, and gss_init_sec_context() must be called again with that token.</para>
+            <para>GSS_S_DEFECTIVE_TOKEN: Consistency checks performed on the input_token failed.</para>
+            <para>GSS_S_DEFECTIVE_CREDENTIAL: Consistency checks performed on the credential failed.</para>
+            <para>GSS_S_NO_CRED: The supplied credentials are not valid for context acceptance, or the credential handle does not reference any credentials.</para>
+            <para>GSS_S_CREDENTIALS_EXPIRED: The referenced credentials have expired.</para>
+            <para>GSS_S_BAD_BINDINGS: The input_token contains different channel bindings than those specified by means of the input_chan_bindings parameter.</para>
+            <para>GSS_S_BAD_SIG: The input_token contains an invalid MIC or a MIC that cannot be verified.</para>
+            <para>GSS_S_OLD_TOKEN: The input_token is too old. This is a fatal error while establishing context.</para>
+            <para>GSS_S_DUPLICATE_TOKEN: The input_token is valid, but it is a duplicate of a token already processed.This is a fatal error while establishing context.</para>
+            <para>GSS_S_NO_CONTEXT: The supplied context handle does not refer to a valid context.</para>
+            <para>GSS_S_BAD_NAMETYPE: The provided target_name parameter contains an invalid or unsupported name type.</para>
+            <para>GSS_S_BAD_NAME: The supplied target_name parameter is ill-formed.</para>
+            <para>GSS_S_BAD_MECH: The token received specifies a mechanism that is not supported by the implementation or the provided credential.</para>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Native.NativeMethods.gss_display_status(System.UInt32@,System.UInt32,System.Int32,MySql.Data.Authentication.GSSAPI.Native.GssOidDescStruct@,System.IntPtr@,MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct@)">
+            <summary>
+            Allows an application to obtain a textual representation of a GSS-API status code, for display to the user or for logging purposes.
+            Since some status values may indicate multiple conditions, applications may need to call gss_display_status multiple times, 
+            each call generating a single text string. The message_context parameter is used by gss_display_status to store state information about which
+            error messages have already been extracted from a given status_value; message_context must be initialized to 0 by the application prior to the first call,
+            and gss_display_status will return a non-zero value in this parameter if there are further messages to extract.
+            </summary>
+            <param name="minorStatus">Mechanism specific status code.</param>
+            <param name="status">Status value to be converted.</param>
+            <param name="statusType">GSS_C_GSS_CODE - status_value is a GSS status code. GSS_C_MECH_CODE - status_value is a mechanism status code.</param>
+            <param name="mechType">Underlying mechanism (used to interpret a minor status value). Supply GSS_C_NO_OID to obtain the system default.</param>
+            <param name="messageContext">Should be initialized to zero by the application prior to the first call. 
+            On return from gss_display_status(), a non-zero status_value parameter indicates that additional messages may be extracted from the status code via 
+            subsequent calls to gss_display_status(), passing the same status_value, status_type, mech_type, and message_context parameters.</param>
+            <param name="statusString">Textual interpretation of the status_value. Storage associated with this parameter must be freed by the application
+            after use with a call to gss_release_buffer().</param>
+            <returns>
+            <para>gss_display_status() may return the following status codes:</para>
+            <para>GSS_S_COMPLETE: Successful completion.</para>
+            <para>GSS_S_BAD_MECH: Indicates that translation in accordance with an unsupported mechanism type was requested.</para>
+            <para>GSS_S_BAD_STATUS: The status value was not recognized, or the status type was neither GSS_C_GSS_CODE nor GSS_C_MECH_CODE.</para>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Native.NativeMethods.gss_release_buffer(System.UInt32@,MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct@)">
+            <summary>
+            Free storage associated with a buffer. The storage must have been allocated by a GSS-API routine. 
+            In addition to freeing the associated storage, the routine will zero the length field in the descriptor to which the buffer parameter refers, 
+            and implementations are encouraged to additionally set the pointer field in the descriptor to NULL. Any buffer object returned by a GSS-API routine 
+            may be passed to gss_release_buffer (even if there is no storage associated with the buffer).
+            </summary>
+            <param name="minorStatus">Mechanism-specific status code.</param>
+            <param name="buffer">The storage associated with the buffer will be deleted. The gss_buffer_desc object will not be freed, 
+            but its length field will be zeroed.</param>
+            <returns>
+            <para>The gss_release_buffer() function may return the following status codes:</para>
+            <para>GSS_S_COMPLETE: Successful completion</para>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Native.NativeMethods.gss_delete_sec_context(System.UInt32@,System.IntPtr@)">
+            <summary>
+            Delete a security context. gss_delete_sec_context will delete the local data structures associated with the specified security context, 
+            and may generate an output_token, which when passed to the peer gss_process_context_token will instruct it to do likewise. 
+            If no token is required by the mechanism, the GSS-API should set the length field of the output_token (if provided) to zero.
+            No further security services may be obtained using the context specified by context_handle.
+            </summary>
+            <param name="minorStatus">Mechanism specific status code.</param>
+            <param name="contextHandle">Context handle identifying context to delete. After deleting the context, 
+            the GSS-API will set this context handle to GSS_C_NO_CONTEXT.</param>
+            <returns>
+            <para>The gss_delete_sec_context() function may return the following status codes:</para>
+            <para>GSS_S_COMPLETE: Successful completion.</para>
+            <para>GSS_S_NO_CONTEXT: No valid context was supplied.</para>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Native.NativeMethods.gss_release_name(System.UInt32@,System.IntPtr@)">
+            <summary>
+            Free GSSAPI-allocated storage associated with an internal-form name. The name is set to GSS_C_NO_NAME on successful completion of this call.
+            </summary>
+            <param name="minorStatus">Mechanism specific status code.</param>
+            <param name="inputName">The name to be deleted.</param>
+            <returns>
+            <para>The gss_release_name() function may return the following status codes:</para>
+            <para>GSS_S_COMPLETE: Successful completion.</para>
+            <para>GSS_S_BAD_NAME: The name parameter did not contain a valid name.</para>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Native.NativeMethods.gss_release_cred(System.UInt32@,System.IntPtr@)">
+            <summary>
+            Informs GSS-API that the specified credential handle is no longer required by the application, and frees associated resources.
+            The cred_handle is set to GSS_C_NO_CREDENTIAL on successful completion of this call.
+            </summary>
+            <param name="minorStatus">Mechanism specific status code.</param>
+            <param name="credentialHandle">Opaque handle identifying credential to be released. If GSS_C_NO_CREDENTIAL is supplied, 
+            the routine will complete successfully, but will do nothing.</param>
+            <returns>
+            <para>The gss_release_cred() function may return the following status codes:</para>
+            <para>GSS_S_COMPLETE: Successful completion.</para>
+            <para>GSS_S_NO_CRED: Credentials could not be accessed.</para>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Native.NativeMethods.gss_unwrap(System.UInt32@,System.IntPtr,MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct@,MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct@,System.Int32@,System.UInt32@)">
+            <summary>
+            Converts a message previously protected by gss_wrap back to a usable form, verifying the embedded MIC. 
+            The conf_state parameter indicates whether the message was encrypted; the qop_state parameter indicates the strength of
+            protection that was used to provide the confidentiality and integrity services.
+            </summary>
+            <param name="minorStatus">Mechanism specific status code.</param>
+            <param name="contextHandle">Identifies the context on which the message arrived.</param>
+            <param name="inputMessage">Protected message.</param>
+            <param name="outputMessage">Buffer to receive unwrapped message.</param>
+            <returns>
+            <para>The gss_unwrap() function may return the following status codes:</para>
+            <para>GSS_S_COMPLETE: Successful completion.</para>
+            <para>GSS_S_DEFECTIVE_TOKEN: The token failed consistency checks.</para>
+            <para>GSS_S_BAD_SIG: The MIC was incorrect.</para>
+            <para>GSS_S_DUPLICATE_TOKEN: The token was valid, and contained a correct MIC for the message, but it had already been processed.</para>
+            <para>GSS_S_OLD_TOKEN: The token was valid, and contained a correct MIC for the message, but it is too old to check for duplication.</para>
+            <para>GSS_S_UNSEQ_TOKEN: The token was valid, and contained a correct MIC for the message, but has been verified out of sequence; 
+            a later token has already been received.</para>
+            <para>GSS_S_GAP_TOKEN: The token was valid, and contained a correct MIC for the message, but has been verified out of sequence; 
+            an earlier expected token has not yet been received.</para>
+            <para>GSS_S_CONTEXT_EXPIRED: The context has already expired.</para>
+            <para>GSS_S_NO_CONTEXT: The context_handle parameter did not identify a valid context.</para>
+            </returns>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Native.NativeMethods.gss_wrap(System.UInt32@,System.IntPtr,MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct@,MySql.Data.Authentication.GSSAPI.Native.GssBufferDescStruct@)">
+            <summary>
+            Attaches a cryptographic MIC and optionally encrypts the specified input_message. The output_message contains both the MIC and the message.
+            The qop_req parameter allows a choice between several cryptographic algorithms, if supported by the chosen mechanism.
+            </summary>
+            <param name="minorStatus">Mechanism specific status code.</param>
+            <param name="contextHandle">Identifies the context on which the message arrived.</param>
+            <param name="inputMessage">Message to be protected.</param>
+            <param name="outputMessage"> Buffer to receive protected message.</param>
+            <returns>
+            <para>The gss_unwrap() function may return the following status codes:</para>
+            <para>GSS_S_COMPLETE: Successful completion.</para>   
+            <para>GSS_S_CONTEXT_EXPIRED: The context has already expired.</para>
+            <para>GSS_S_NO_CONTEXT: The context_handle parameter did not identify a valid context.</para>
+            <para>GSS_S_BAD_QOP: The specified QOP is not supported by the mechanism.</para>
+            </returns>
+        </member>
+        <member name="T:MySql.Data.Authentication.GSSAPI.Native.NativeMethods32">
+            <summary>
+            MIT Kerberos 5 GSS Bindings Windows 32bit
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Authentication.GSSAPI.Native.NativeMethods64">
+            <summary>
+            MIT Kerberos 5 GSS Bindings Windows 64bit
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Authentication.GSSAPI.Native.NativeMethodsLinux">
+            <summary>
+            MIT Kerberos 5 GSS Bindings Linux
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Authentication.GSSAPI.Utility.Disposable">
+            <summary>
+            Automatic dynamic disposable
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Disposable.From``1(``0)">
+            <summary>
+            Automatic dynamic disposable storing <paramref name="value"/>
+            </summary> 
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Disposable.From``1(``0,System.Action)">
+            <summary>
+            Automatic dynamic disposable storing <paramref name="value"/>, <paramref name="disposeAction"/> will be called at dispose
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Disposable.From``2(``1,System.Func{``1,``0})">
+            <summary>
+            Automatic dynamic disposable storing <paramref name="value"/>, <paramref name="disposable"/> will be disposed
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Disposable.From``2(``1,System.Func{``1,``0},System.Action{``0})">
+            <summary>
+            Automatic dynamic disposable storing <paramref name="value"/>, <paramref name="disposable"/> will be disposed
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Disposable.From``1(``0,System.IDisposable[])">
+            <summary>
+            Automatic dynamic disposable storing <paramref name="value"/>, <paramref name="disposables"/> will be disposed
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Disposable.From``1(``0,System.IDisposable[],System.Action)">
+            <summary>
+            Automatic dynamic disposable storing <paramref name="value"/>, <paramref name="disposables"/> will be disposed and <paramref name="disposeAction"/> will be called at dispose
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Authentication.GSSAPI.Utility.Disposable`1">
+            <summary>
+            Automatic dynamic disposable
+            </summary>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Utility.Disposable`1.Value">
+            <summary>
+            Original value, can be used with <code>ref</code>
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Disposable`1.#ctor(`0,System.IDisposable[],System.Action)">
+            <summary>
+            Automatic dynamic disposable storing <paramref name="value"/>, <paramref name="disposables"/> will be disposed and <paramref name="disposeAction"/> will be called at dispose
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Disposable`1.op_Implicit(MySql.Data.Authentication.GSSAPI.Utility.Disposable{`0})~`0">
+            <summary>
+            Returns stored value
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Authentication.GSSAPI.Utility.KerberosConfig">
+            <summary>
+            Gets the Kerberos configuration from the "krb5.conf/krb5.ini" file
+            </summary>
+        </member>
+        <member name="T:MySql.Data.Authentication.GSSAPI.Utility.Pinned">
+            <summary>
+            Memory pinned object
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Pinned.From``1(``0)">
+            <summary>
+            Create memory pinned object from <paramref name="value"/>
+            </summary>
+            <typeparam name="T">Any class type</typeparam>
+            <param name="value">Value to pin</param>
+            <returns>Pinned value</returns>
+        </member>
+        <member name="T:MySql.Data.Authentication.GSSAPI.Utility.Pinned`1">
+            <summary>
+            Memory pinned object
+            </summary>
+            <typeparam name="T">Any class type</typeparam>
+        </member>
+        <member name="F:MySql.Data.Authentication.GSSAPI.Utility.Pinned`1.Value">
+            <summary>
+            Original object value, can be used with <code>ref</code>
+            </summary>
+        </member>
+        <member name="P:MySql.Data.Authentication.GSSAPI.Utility.Pinned`1.Address">
+            <summary>
+            In memory address of the object
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Pinned`1.#ctor(`0)">
+            <summary>
+            Create memory pinned object from <paramref name="value"/>
+            </summary>
+            <param name="value">Value to pin</param>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Pinned`1.op_Implicit(MySql.Data.Authentication.GSSAPI.Utility.Pinned{`0})~System.IntPtr">
+            <summary>
+            Returns address of object in memory
+            </summary>
+        </member>
+        <member name="M:MySql.Data.Authentication.GSSAPI.Utility.Pinned`1.op_Implicit(MySql.Data.Authentication.GSSAPI.Utility.Pinned{`0})~`0">
+            <summary>
+            Returns original object value
+            </summary>
+        </member>
         <member name="T:MySql.Data.Common.DnsResolver">
             <summary>
             DNS resolver that runs queries against a server.
@@ -11061,56 +11663,18 @@
              the socket to Blocking and retry the operation once again.
              </summary>
         </member>
+        <member name="P:MySql.Data.Common.MyNetworkStream.IsSocketClosed">
+            <summary>
+            Determines whether the connection state is closed or open.
+            </summary>
+            <returns><c>true</c> if connection is closed; otherwise, <c>false</c>.</returns>
+        </member>
         <member name="M:MySql.Data.Common.MyNetworkStream.SetKeepAlive(System.Net.Sockets.Socket,System.UInt32)">
             <summary>
             Set keepalive + timeout on socket.
             </summary>
             <param name="s">socket</param>
             <param name="time">keepalive timeout, in seconds</param>
-        </member>
-        <member name="T:MySql.Data.Common.MySqlSshClientManager">
-            <summary>
-            Static class to manage SSH connections created with SSH .NET.
-            </summary>
-        </member>
-        <member name="P:MySql.Data.Common.MySqlSshClientManager.CurrentSshClient">
-            <summary>
-            Gets or sets the SSH client initialized when calling the <seealso cref="M:MySql.Data.Common.MySqlSshClientManager.SetupSshClient(System.String,System.String,System.String,System.String,System.String,System.UInt32,System.String,System.UInt32,System.Boolean)"/> method.
-            </summary>
-        </member>
-        <member name="F:MySql.Data.Common.MySqlSshClientManager._sshClientList">
-            <summary>
-            Stores a list of SSH clients having different connection settings.
-            </summary>
-        </member>
-        <member name="M:MySql.Data.Common.MySqlSshClientManager.RemoveUnsupportedAlgorithms(Renci.SshNet.SshClient)">
-            <summary>
-            Removes the MySQL unsupported encryptions (SSH Ciphers), MACs and key exchange algorithms.
-            </summary>
-            <param name="client">The <see cref="T:Renci.SshNet.SshClient"/> instance containing the list of supported elements.</param>
-            <remarks>See https://confluence.oraclecorp.com/confluence/display/GPS/Approved+Security+Technologies%3A+Standards+-+SSH+Ciphers+and+Versions for an updated list.</remarks>
-        </member>
-        <member name="M:MySql.Data.Common.MySqlSshClientManager.SetupSshClient(System.String,System.String,System.String,System.String,System.String,System.UInt32,System.String,System.UInt32,System.Boolean)">
-            <summary>
-            Initializes an <see cref="T:Renci.SshNet.SshClient"/> instance if no SSH client with similar connection options has already been initialized.
-            </summary>
-            <param name="sshHostName">The SSH host name.</param>
-            <param name="sshUserName">The SSH user name.</param>
-            <param name="sshPassword">The SSH password.</param>
-            <param name="sshKeyFile">The SSH key file.</param>
-            <param name="sshPassphrase">The SSH pass phrase.</param>
-            <param name="sshPort">The SSH port.</param>
-            <param name="server">The local host name.</param>
-            <param name="port">The local port number.</param>
-            <param name="isXProtocol">Flag to indicate if the connection will be created for the classic or X Protocol.</param>
-            <returns></returns>
-        </member>
-        <member name="M:MySql.Data.Common.MySqlSshClientManager.ValidateDeprecatedAlgorithms(Renci.SshNet.SshClient)">
-            <summary>
-            Raises warning messages if the SSH client is using a deprecated encryption, MAC or key exchanged algorithm.
-            </summary>
-            <param name="client">The <see cref="T:Renci.SshNet.SshClient"/> instance containing the
-            encryption, MAC algorithm and key exchange algorithm currently being used.</param>
         </member>
         <member name="M:MySql.Data.Common.MySqlTokenizer.ReadQuotedToken(System.Char)">
             <summary>
@@ -11140,21 +11704,6 @@
             Mark - or + signs that are unary ops as no output
             </summary>
             <param name="tok"></param>
-        </member>
-        <member name="T:MySql.Data.Common.Ssh">
-            <summary>
-            Wrapper class used for handling SSH connections.
-            </summary>
-        </member>
-        <member name="M:MySql.Data.Common.Ssh.StartClient">
-            <summary>
-            Starts the SSH client.
-            </summary>
-        </member>
-        <member name="M:MySql.Data.Common.Ssh.StopClient">
-            <summary>
-            Stops the SSH client.
-            </summary>
         </member>
         <member name="T:MySql.Data.Common.Ssl">
             <summary>
@@ -11658,11 +12207,6 @@
               Looks up a localized string similar to The default connection encoding was not found. Please report this as a bug along with your connection string and system details..
             </summary>
         </member>
-        <member name="P:MySql.Data.Resources.DeprecatedSshAlgorithm">
-            <summary>
-              Looks up a localized string similar to The {0} algorithm being used by the server({1}) has been deprecated and will be removed in a future version. It is recommended that you configure the server to use a non-deprecated {0} algorithm..
-            </summary>
-        </member>
         <member name="P:MySql.Data.Resources.DistributedTxnNotSupported">
             <summary>
               Looks up a localized string similar to MySQL Connector/NET does not currently support distributed transactions..
@@ -11796,6 +12340,11 @@
         <member name="P:MySql.Data.Resources.InvalidCertificateKey">
             <summary>
               Looks up a localized string similar to The provided key is invalid..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.Resources.InvalidCertificateThumbprint">
+            <summary>
+              Looks up a localized string similar to Certificate with Thumbprint &apos;{0}&apos; not found..
             </summary>
         </member>
         <member name="P:MySql.Data.Resources.InvalidColumnOrdinal">
@@ -12138,16 +12687,6 @@
               Looks up a localized string similar to Stored procedures are not supported on this version of MySQL.
             </summary>
         </member>
-        <member name="P:MySql.Data.Resources.SshAuthenticationModeNotSet">
-            <summary>
-              Looks up a localized string similar to The SSH Key File and/or SSH Password must be provided..
-            </summary>
-        </member>
-        <member name="P:MySql.Data.Resources.SshInvalidPassphrase">
-            <summary>
-              Looks up a localized string similar to The provided passphrase is invalid..
-            </summary>
-        </member>
         <member name="P:MySql.Data.Resources.SslCertificateCAMismatch">
             <summary>
               Looks up a localized string similar to The certificate authority (CA) does not match..
@@ -12464,17 +13003,11 @@
               Looks up a localized string similar to {0} &apos;{1}&apos; does not exist in schema &apos;{2}&apos;..
             </summary>
         </member>
-        <member name="P:MySql.Data.ResourcesX.DnsSrvConflictingOptions">
+        <member name="P:MySql.Data.ResourcesX.CompressionAlgorithmNegotiationFailed">
             <summary>
-              Looks up a localized string similar to &apos;{0}&apos; cannot be set to false with DNS SRV lookup enabled..
+              Looks up a localized string similar to Compression requested but the compression algorithm negotiation failed..
             </summary>
         </member>
-        <member name="P:MySql.Data.ResourcesX.DnsSrvInvalidScheme">
-            <summary>
-              Looks up a localized string similar to Scheme &apos;{0}&apos; is not valid..
-            </summary>
-        </member>
-        <!-- Badly formed XML comment ignored for member "P:MySql.Data.ResourcesX.CompressionAlgorithmNegotiationFailed" -->
         <member name="P:MySql.Data.ResourcesX.CompressionAlgorithmNotSupported">
             <summary>
               Looks up a localized string similar to Compression using {0} is not supported..
@@ -12508,6 +13041,16 @@
         <member name="P:MySql.Data.ResourcesX.CompressionPendingMessagesToProcess">
             <summary>
               Looks up a localized string similar to There are still decompressed messages pending to be processed..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.ResourcesX.DnsSrvConflictingOptions">
+            <summary>
+              Looks up a localized string similar to &apos;{0}&apos; cannot be set to false with DNS SRV lookup enabled..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.ResourcesX.DnsSrvInvalidScheme">
+            <summary>
+              Looks up a localized string similar to Scheme &apos;{0}&apos; is not valid..
             </summary>
         </member>
         <member name="P:MySql.Data.ResourcesX.DuplicateUserDefinedAttribute">
@@ -12637,7 +13180,7 @@
         </member>
         <member name="P:MySql.Data.ResourcesX.MissingSchemaOption">
             <summary>
-              Looks up a localized string similar to Missed required &apos;schema&apos; option..
+              Looks up a localized string similar to Missed required schema option..
             </summary>
         </member>
         <member name="P:MySql.Data.ResourcesX.MoreThanOneDocumentId">
@@ -12668,6 +13211,21 @@
         <member name="P:MySql.Data.ResourcesX.NoPlaceholders">
             <summary>
               Looks up a localized string similar to No placeholders..
+            </summary>
+        </member>
+        <member name="P:MySql.Data.ResourcesX.NoticeIdleConnection">
+            <summary>
+              Looks up a localized string similar to Connection closed. Reason: connection idle was too long.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.ResourcesX.NoticeKilledConnection">
+            <summary>
+              Looks up a localized string similar to Connection closed. Reason: connection was killed by a different session.
+            </summary>
+        </member>
+        <member name="P:MySql.Data.ResourcesX.NoticeServerShutdown">
+            <summary>
+              Looks up a localized string similar to Connection closed. Reason: server was shutdown.
             </summary>
         </member>
         <member name="P:MySql.Data.ResourcesX.NumberNotGreaterThanZero">
@@ -12707,7 +13265,7 @@
         </member>
         <member name="P:MySql.Data.ResourcesX.SchemaCreateCollectionMsg">
             <summary>
-              Looks up a localized string similar to The server doesn&apos;t support the requested operation. Please update the MySQL Server and/or Client library.
+              Looks up a localized string similar to The server doesn&apos;t support the requested operation. Please update the MySQL Server, client library, or both..
             </summary>
         </member>
         <member name="P:MySql.Data.ResourcesX.ThrowingAwayResults">
@@ -12976,6 +13534,61 @@
             </summary>
             <returns>A string representation of the WKT.</returns>
         </member>
+        <member name="T:MySql.Data.X.Communication.XPacketProcessor">
+            <summary>
+            Enables X Protocol packets from the network stream to be retrieved and processed
+            </summary>
+        </member>
+        <member name="F:MySql.Data.X.Communication.XPacketProcessor._stream">
+            <summary>
+            The instance of the stream that holds the network connection with MySQL Server.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.X.Communication.XPacketProcessor._compressionController">
+            <summary>
+            This field is used to enable compression and decompression actions in the communication channel.
+            </summary>
+        </member>
+        <member name="F:MySql.Data.X.Communication.XPacketProcessor._packetQueue">
+            <summary>
+            A Queue to store the pending packets removed from the <see cref="F:MySql.Data.X.Communication.XPacketProcessor._stream"/>
+            </summary>
+        </member>
+        <member name="M:MySql.Data.X.Communication.XPacketProcessor.#ctor(System.IO.Stream)">
+            <summary>
+            Creates a new instance of XPacketProcessor.
+            </summary>
+            <param name="stream">The stream to be used as communication channel.</param>
+        </member>
+        <member name="M:MySql.Data.X.Communication.XPacketProcessor.#ctor(System.IO.Stream,MySqlX.Communication.XCompressionController)">
+            <summary>
+            Creates a new instance of XPacketProcessor.
+            </summary>
+            <param name="stream">The stream to be used as communication channel.</param>
+            <param name="stream">The XCompressionController to be used for compression actions.</param>
+        </member>
+        <member name="M:MySql.Data.X.Communication.XPacketProcessor.IdentifyPacket(MySqlX.Communication.CommunicationPacket)">
+            <summary>
+            Identifies the kind of packet received over the network and execute
+            the corresponding processing.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.X.Communication.XPacketProcessor.GetPacketFromNetworkStream(System.Boolean)">
+            <summary>
+            Reads data from the network stream and create a packet of type <see cref="T:MySqlX.Communication.CommunicationPacket"/>.
+            </summary>
+            <returns>A <see cref="T:MySqlX.Communication.CommunicationPacket"/>.</returns>
+        </member>
+        <member name="M:MySql.Data.X.Communication.XPacketProcessor.ReadFully(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Sends the read/write actions to the MyNetworkStream class.
+            </summary>
+        </member>
+        <member name="M:MySql.Data.X.Communication.XPacketProcessor.ProcessPendingPackets(System.Net.Sockets.Socket)">
+            <summary>
+            Reads the pending packets present in the network channel and processes them accordingly.
+            </summary>
+        </member>
         <member name="T:MySqlX.Security.ExternalAuthenticationPlugin">
             <summary>
             Implementation of EXTERNAL authentication type.
@@ -13209,20 +13822,20 @@
             Loads the libzstd.dll assembly.
             </summary>
         </member>
-        <member name="M:MySqlX.Communication.XPacketReaderWriter.#ctor(System.IO.Stream)">
+        <member name="M:MySqlX.Communication.XPacketReaderWriter.#ctor(System.IO.Stream,System.Net.Sockets.Socket)">
             <summary>
             Constructor that sets the stream used to read or write data.
             </summary>
             <param name="stream">The stream used to read or write data.</param>
         </member>
-        <member name="M:MySqlX.Communication.XPacketReaderWriter.#ctor(System.IO.Stream,MySqlX.Communication.XCompressionController)">
+        <member name="M:MySqlX.Communication.XPacketReaderWriter.#ctor(System.IO.Stream,MySqlX.Communication.XCompressionController,MySqlX.Communication.XCompressionController,System.Net.Sockets.Socket)">
             <summary>
             Constructor that sets the stream used to read or write data and the compression controller.
             </summary>
             <param name="stream">The stream used to read or write data.</param>
             <param name="compressionController">The compression controller.</param>
         </member>
-        <member name="P:MySqlX.Communication.XPacketReaderWriter.CompressionController">
+        <member name="P:MySqlX.Communication.XPacketReaderWriter.CompressionReadController">
             <summary>
             Gets or sets the compression controller uses to manage compression operations.
             </summary>
@@ -13560,11 +14173,6 @@
             <summary>
             Defines the compression controller that will be passed on the <see cref="T:MySqlX.Communication.XPacketReaderWriter"/> instance when
             compression is enabled.
-            </summary>
-        </member>
-        <member name="F:MySqlX.Sessions.XInternalSession._sshHandler">
-            <summary>
-            The used client to handle SSH connections.
             </summary>
         </member>
         <member name="M:MySqlX.Sessions.XInternalSession.VerifyDefaultOrder(System.String[]@)">
@@ -14781,7 +15389,6 @@
             Opens a session to the server given or to the first available server if multiple servers were specified.
             </summary>
             <param name="connectionString">The connection string or URI string format.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Session"/> object representing the established session.</returns>
             <remarks>Multiple hosts can be specified as part of the <paramref name="connectionString"/> which
@@ -14793,7 +15400,6 @@
             Opens a session to the server given.
             </summary>
             <param name="connectionData">The connection data for the server.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Session"/> object representing the established session.</returns>
         </member>
@@ -14802,7 +15408,6 @@
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
             <param name="connectionString">The connection string or URI string format.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <param name="connectionOptions">The connection options in JSON string format.</param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Client"/> object representing a session pool.</returns>
@@ -14812,7 +15417,6 @@
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
             <param name="connectionString">The connection string or URI string format.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <param name="connectionOptions">The connection options in object format.
             <example>
@@ -14835,7 +15439,6 @@
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
             <param name="connectionData">The connection data.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <param name="connectionOptions">The connection options in JSON string format.</param>
             <returns>A <see cref="T:MySqlX.XDevAPI.Client"/> object representing a session pool.</returns>
@@ -14845,7 +15448,6 @@
             Creates a new <see cref="T:MySqlX.XDevAPI.Client"/> instance.
             </summary>
             <param name="connectionData">The connection data.
-            The aliases 'address', 'addr' and 'network address' are deprecated as valid server synonyms.
             </param>
             <param name="connectionOptions">The connection options in object format.
             <example>
@@ -15409,6 +16011,11 @@
             Executes a query in the database to get the current schema.
             </summary>
             <returns>Current database <see cref="T:MySqlX.XDevAPI.Schema"/> object or null if no schema is selected.</returns>
+        </member>
+        <member name="M:MySqlX.XDevAPI.Session.ThrowSessionClosedByServerException(MySql.Data.MySqlClient.MySqlException,MySqlX.XDevAPI.BaseSession)">
+            <summary>
+            Closes the current session properly after it was closed by the server.
+            </summary>
         </member>
         <member name="T:Mysqlx.MysqlxReflection">
             <summary>Holder for reflection information generated from mysqlx.proto</summary>

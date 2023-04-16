@@ -58,17 +58,17 @@ namespace Gauge
 
                 //lets set how to display the X Labels
                 //DateTimeFormatter = value => new DateTime((long)value).ToString("dd/MM/yyyy HH:mm:ss");
-                DateTimeFormatter = value => new DateTime((long)value).ToString("HH:mm");
+                DateTimeFormatter = value => new DateTime((long)value).ToString("HH:mm:ss");
                 ValueFormat = value => Math.Round(value, 2).ToString();
 
                 //AxisStep forces the distance between each separator in the X axis
-                //AxisStep = TimeSpan.FromSeconds(StepLabelX).Ticks;//cài đặt số điểm hiển thị trên label trục x
-                AxisStep = TimeSpan.FromMinutes(StepLabelX).Ticks;//cài đặt số điểm hiển thị trên label trục x
+                AxisStep = TimeSpan.FromSeconds(StepLabelX).Ticks;//cài đặt số điểm hiển thị trên label trục x
+                //AxisStep = TimeSpan.FromMinutes(StepLabelX).Ticks;//cài đặt số điểm hiển thị trên label trục x
 
                 //AxisUnit forces lets the axis know that we are plotting seconds
                 //this is not always necessary, but it can prevent wrong labeling
-                //AxisUnit = TimeSpan.FromSeconds(1).Ticks;//cài đặt bao nhiêu point thì random 1 lần
-                AxisUnit = TimeSpan.FromMinutes(10).Ticks;//cài đặt bao nhiêu point thì random 1 lần
+                AxisUnit = TimeSpan.FromSeconds(1).Ticks;//cài đặt bao nhiêu point thì random 1 lần
+                //AxisUnit = TimeSpan.FromMinutes(10).Ticks;//cài đặt bao nhiêu point thì random 1 lần
 
                 SetAxisLimits(DateTime.Now);//sét min và max cảu trục x
 
@@ -362,11 +362,11 @@ namespace Gauge
 
         private void SetAxisLimits(DateTime now)
         {
-            //AxisMax = now.Ticks + TimeSpan.FromSeconds(0).Ticks; // lets force the axis to be 1 second ahead
-            //AxisMin = now.Ticks - TimeSpan.FromSeconds(60).Ticks; // and 8 seconds behind
+            AxisMax = now.Ticks + TimeSpan.FromSeconds(0).Ticks; // lets force the axis to be 1 second ahead
+            AxisMin = now.Ticks - TimeSpan.FromSeconds(60).Ticks; // and 8 seconds behind
 
-            AxisMax = now.Ticks + TimeSpan.FromMinutes(0).Ticks; // lets force the axis to be 1 second ahead
-            AxisMin = now.Ticks - TimeSpan.FromMinutes(20).Ticks; // and 8 seconds behind
+            //AxisMax = now.Ticks + TimeSpan.FromMinutes(0).Ticks; // lets force the axis to be 1 second ahead
+            //AxisMin = now.Ticks - TimeSpan.FromMinutes(20).Ticks; // and 8 seconds behind
         }
 
         private void SetAxisLimits(DateTime min, DateTime max)

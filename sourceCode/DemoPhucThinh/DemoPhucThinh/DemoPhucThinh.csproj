@@ -74,7 +74,9 @@
     <Reference Include="Microsoft.AspNet.SignalR.Client">
       <HintPath>..\..\..\..\..\..\..\Learn\EasyScada\SourceCode\NewEasyScada\Debug\Toolkit\Microsoft.AspNet.SignalR.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Expression.Controls, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Controls">
+      <HintPath>..\..\Gauge\Gauge\bin\Debug\Microsoft.Expression.Controls.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Expression.Drawing">
       <HintPath>..\..\..\..\..\4.ToolsGraphic\Gauge\Gauge\bin\Debug\Microsoft.Expression.Drawing.dll</HintPath>
     </Reference>

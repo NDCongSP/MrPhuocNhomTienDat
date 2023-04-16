@@ -137,7 +137,6 @@ D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Gauge.dll
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MaterialDesignColors.dll
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Microsoft.Expression.Controls.dll
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Microsoft.Expression.Drawing.dll
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MySql.Data.dll
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Newtonsoft.Json.dll
@@ -148,7 +147,6 @@ D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MaterialDesignColors.pdb
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MaterialDesignThemes.Wpf.pdb
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Microsoft.Expression.Controls.xml
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Microsoft.Expression.Drawing.xml
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Newtonsoft.Json.xml
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\LiveCharts.pdb
@@ -187,3 +185,19 @@ D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\DemoPhucThinh.csproj.CopyComplete
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\GiamSatDucNhomApp.exe
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\GiamSatDucNhomApp.pdb
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\DocumentFormat.OpenXml.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Google.Protobuf.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Zstandard.Net.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\BouncyCastle.Crypto.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Ubiety.Dns.Core.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\System.Memory.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\System.Buffers.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\K4os.Compression.LZ4.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\K4os.Hash.xxHash.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\System.Numerics.Vectors.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\DocumentFormat.OpenXml.xml
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MySql.Data.xml
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Microsoft.Expression.Controls.dll
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Microsoft.Expression.Controls.xml

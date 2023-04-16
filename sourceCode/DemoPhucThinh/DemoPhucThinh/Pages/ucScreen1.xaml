@@ -81,7 +81,7 @@
                 <!--<gauge:easyRealTimeTrend Canvas.Left="88" Canvas.Top="346" x:Name="realTimeChart" Height="424" Width="913" 
                                          PointNums="600" Interval="1000" StepLabelX="1" AxisYMax="5"/>-->
                 <gauge:easyRealTimeTrend Canvas.Left="88" Canvas.Top="346" x:Name="realTimeChart" Height="424" Width="913" 
-                                         PointNums="30" Interval="60000" StepLabelX="1" AxisYMax="5"/>
+                                         PointNums="7" Interval="10000" StepLabelX="10" AxisYMax="5" Loaded="realTimeChart_Loaded"/>
             </Canvas>
 
             <Border Grid.Column="1" BorderThickness="2" BorderBrush="Black" CornerRadius="3" Margin="3">

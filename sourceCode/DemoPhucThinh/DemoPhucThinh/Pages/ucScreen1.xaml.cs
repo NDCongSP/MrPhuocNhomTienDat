@@ -49,5 +49,10 @@ namespace DemoPhucThinh
             realTimeChart.Title3 = null;
             realTimeChart.Start();
         }
+
+        private void realTimeChart_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
