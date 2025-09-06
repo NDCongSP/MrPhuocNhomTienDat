@@ -298,7 +298,7 @@ namespace DemoPhucThinh
                         //config type for column
                         if (col == "NhietDoNuocNhomTrongLo" || col == "NhietDoNhomTruocKhuon" || col == "NhietDoNhomCuoiKhuon"
                             || col == "NhietDoNuocGiaiNhietMam" || col == "NhietDoNuocMatGieng" || col == "NhietDoKhongKhiTrongLo"
-                            || col == "ApLucNuocL1" || col == "ApLucNuocL2" || col == "TocDoCayKhuay"
+                            || col == "ApLucNuocL1" || col == "VanTocSoiTitan" || col == "TocDoCayKhuay"
                             || col == "ApKhiArgon" || col == "VanTocXuongMam" || col == "ChieuDaiPhoi" || col == "ThoiGianDongDac"
                             || col == "TanSoXuongMam" || col == "TanSoBomNuoc")
                         {
