@@ -137,9 +137,7 @@ D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Gauge.dll
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MaterialDesignColors.dll
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Microsoft.Expression.Controls.dll
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Microsoft.Expression.Drawing.dll
-D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MySql.Data.dll
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Newtonsoft.Json.dll
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\LiveCharts.dll
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\LiveCharts.Wpf.dll

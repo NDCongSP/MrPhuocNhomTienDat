@@ -47,7 +47,7 @@ namespace DemoPhucThinh
             this.MacNhom = row["MacNhom"].ToString();
             this.DuongKinh = row["DuongKinh"].ToString();
             this.ApLucNuocL1 = !string.IsNullOrEmpty(row["ApLucNuocL1"].ToString()) ? Math.Round(Convert.ToDouble(row["ApLucNuocL1"]), 2) : 0;
-            this.VanTocSoiTitan = !string.IsNullOrEmpty(row["ApLucNuocL2"].ToString()) ? Math.Round(Convert.ToDouble(row["ApLucNuocL2"]), 2) : 0;
+            this.VanTocSoiTitan = !string.IsNullOrEmpty(row["VanTocSoiTitan"].ToString()) ? Math.Round(Convert.ToDouble(row["VanTocSoiTitan"]), 2) : 0;
             this.TocDoCayKhuay = !string.IsNullOrEmpty(row["TocDoCayKhuay"].ToString()) ? Math.Round(Convert.ToDouble(row["TocDoCayKhuay"]), 2) : 0;
             this.ApKhiArgon = !string.IsNullOrEmpty(row["ApKhiArgon"].ToString()) ? Math.Round(Convert.ToDouble(row["ApKhiArgon"]), 2) : 0;
             this.VanTocXuongMam = !string.IsNullOrEmpty(row["VanTocXuongMam"].ToString()) ? Math.Round(Convert.ToDouble(row["VanTocXuongMam"]), 2) : 0;

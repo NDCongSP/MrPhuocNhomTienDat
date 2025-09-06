@@ -36,8 +36,9 @@ namespace DemoPhucThinh
 
                 if (!string.IsNullOrEmpty(datePickerFormDate.Text) && !string.IsNullOrEmpty(datePickerToDate.Text))
                 {
-                    DataTable result = DataProvider.Instance.ExecuteQuery($"select * from data where DateTime >= '{Convert.ToDateTime(datePickerFormDate.Text).ToString("yyyy-MM-dd 00:00:00")}' " +
-                        $"and DateTime <= '{Convert.ToDateTime(datePickerToDate.Text).ToString("yyyy-MM-dd 23:59:59")}'");// DbData.Instance.GetAll();
+                    var query = $"select * from data where DateTime >= '{Convert.ToDateTime(datePickerFormDate.Text).ToString("yyyy-MM-dd 00:00:00")}' " +
+                        $"and DateTime <= '{Convert.ToDateTime(datePickerToDate.Text).ToString("yyyy-MM-dd 23:59:59")}' order by datetime desc";
+                    DataTable result = DataProvider.Instance.ExecuteQuery(query);// DbData.Instance.GetAll();
 
                     if (result != null && result.Rows.Count > 0)
                     {
@@ -85,8 +86,9 @@ namespace DemoPhucThinh
 
                     reportPath = saveFileDialog1.FileName;
 
-                    _data = DataProvider.Instance.ExecuteQuery($"select * from data where DateTime >= '{Convert.ToDateTime(datePickerFormDate.Text).ToString("yyyy-MM-dd 00:00:00")}' " +
-                        $"and DateTime <= '{Convert.ToDateTime(datePickerToDate.Text).ToString("yyyy-MM-dd 23:59:59")}'");
+                    var query = $"select * from data where DateTime >= '{Convert.ToDateTime(datePickerFormDate.Text).ToString("yyyy-MM-dd 00:00:00")}' " +
+                        $"and DateTime <= '{Convert.ToDateTime(datePickerToDate.Text).ToString("yyyy-MM-dd 23:59:59")}' order by datetime desc";
+                    _data = DataProvider.Instance.ExecuteQuery(query);
 
                     ReadWriteExcel exportExcel = new ReadWriteExcel();
 
