@@ -33,7 +33,9 @@ namespace DemoPhucThinh
             }
             private set => _instance = value;
         }
-        public DataProvider() { }
+        public DataProvider() {
+            connectionStr = ConfigurationSettings.AppSettings["ConString"];
+        }
         #endregion
 
         /// <summary>

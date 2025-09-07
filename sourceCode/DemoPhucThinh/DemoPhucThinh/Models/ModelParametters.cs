@@ -10,24 +10,24 @@ namespace DemoPhucThinh
     public class ModelParametters
     {
         //các biến lưu giá trị của các tag để log DB
-        public string DateTime { get; set; }
-        public double TNuocNhomTrongLo { get; set; }
-        public double TNhomTruocKhuon { get; set; }
-        public double TNhomCuoiKho { get; set; }
-        public double TNuocGiaiNhietMam { get; set; }
-        public double TNuocMatGieng { get; set; }
-        public double TKhongKhiTrongLo { get; set; }
-        public string MacNhom { get; set; }
-        public string DuongKinh { get; set; }
-        public double ApLucNuocL1 { get; set; }
-        public double VanTocSoiTitan { get; set; }
-        public double TocDoCayKhuay { get; set; }
-        public double ApKhiArgon { get; set; }
-        public double VanTocXuongMam { get; set; }
-        public double ChieuDaiPhoi { get; set; }
-        public double ThoiGianDongDac { get; set; }
-        public double TanSoXuongMam { get; set; }
-        public double TanSoBomNuoc { get; set; }
+        public string DateTime { get; set; } = string.Empty;
+        public double TNuocNhomTrongLo { get; set; } = 0;
+        public double TNhomTruocKhuon { get; set; } = 0;
+        public double TNhomCuoiKho { get; set; } = 0;
+        public double TNuocGiaiNhietMam { get; set; } = 0;
+        public double TNuocMatGieng { get; set; } = 0;
+        public double TKhongKhiTrongLo { get; set; } = 0;
+        public string MacNhom { get; set; } = string.Empty;
+        public string DuongKinh { get; set; } = string.Empty;
+        public double ApLucNuocL1 { get; set; } = 0;
+        public double VanTocSoiTitan { get; set; } = 0;
+        public double TocDoCayKhuay { get; set; } = 0;
+        public double ApKhiArgon { get; set; } = 0;
+        public double VanTocXuongMam { get; set; } = 0;
+        public double ChieuDaiPhoi { get; set; } = 0;
+        public double ThoiGianDongDac { get; set; } = 0;
+        public double TanSoXuongMam { get; set; } = 0;
+        public double TanSoBomNuoc { get; set; } = 0;
 
         public ModelParametters()
         {

@@ -115,6 +115,7 @@
     </ApplicationDefinition>
     <Compile Include="Common\ConvertDataTableToList.cs" />
     <Compile Include="Common\DataProvider.cs" />
+    <Compile Include="Common\Logger.cs" />
     <Compile Include="Common\ReadWriteExcel.cs" />
     <Compile Include="Common\SqlTransactionQueryList.cs" />
     <Compile Include="Common\VariableGlobal.cs" />

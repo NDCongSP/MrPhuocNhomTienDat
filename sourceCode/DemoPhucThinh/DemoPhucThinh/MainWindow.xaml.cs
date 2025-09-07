@@ -1,4 +1,5 @@
-﻿using EasyScada.Core;
+﻿using DemoPhucThinh.Common;
+using EasyScada.Core;
 using EasyScada.Wpf.Controls;
 using Newtonsoft.Json;
 using System;
@@ -556,14 +557,17 @@ namespace DemoPhucThinh
             timeLog = stopTime - startTime;
             if (timeLog.TotalSeconds >= VariableGlobal.TimeInterval.ThoiGianLogData)
             {
-                //Log data
-                queryResult = DataProvider.Instance.ExecuteNonQuery($"insert into data (MacNhom,DuongKinh,NhietDoNuocNhomTrongLo,NhietDoNhomTruocKhuon,NhietDoNhomCuoiKhuon," +
+                string query = $"insert into data (MacNhom,DuongKinh,NhietDoNuocNhomTrongLo,NhietDoNhomTruocKhuon,NhietDoNhomCuoiKhuon," +
                     $"NhietDoNuocGiaiNhietMam,NhietDoNuocMatGieng,NhietDoKhongKhiTrongLo,ApLucNuocL1,VanTocSoiTitan,TocDoCayKhuay,ApKhiArgon," +
                     $"VanTocXuongMam,ChieuDaiPhoi,ThoiGianDongDac,TanSoXuongMam,TanSoBomNuoc) " +
                     $"values ('{parametterLocal.MacNhom}','{parametterLocal.DuongKinh}',{parametterLocal.TNuocNhomTrongLo},{parametterLocal.TNhomTruocKhuon}," +
                     $"{parametterLocal.TNhomCuoiKho},{parametterLocal.TNuocGiaiNhietMam},{parametterLocal.TNuocMatGieng},{parametterLocal.TKhongKhiTrongLo}," +
                     $"{parametterLocal.ApLucNuocL1},{parametterLocal.VanTocSoiTitan},{parametterLocal.TocDoCayKhuay},{parametterLocal.ApKhiArgon},{parametterLocal.VanTocXuongMam}," +
-                    $"{parametterLocal.ChieuDaiPhoi},{parametterLocal.ThoiGianDongDac},{parametterLocal.TanSoXuongMam},{parametterLocal.TanSoBomNuoc})");
+                    $"{parametterLocal.ChieuDaiPhoi},{parametterLocal.ThoiGianDongDac},{parametterLocal.TanSoXuongMam},{parametterLocal.TanSoBomNuoc})";
+                //Log data
+                Logger.Log(query);
+                queryResult = DataProvider.Instance.ExecuteNonQuery(query);
+                
                 if (queryResult > 0)
                 {
                     startTime = DateTime.Now;

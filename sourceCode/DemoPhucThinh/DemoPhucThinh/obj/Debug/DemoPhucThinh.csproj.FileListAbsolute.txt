@@ -146,14 +146,12 @@ D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MaterialDesignColors.pdb
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MaterialDesignThemes.Wpf.pdb
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Microsoft.Expression.Controls.xml
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Microsoft.Expression.Drawing.xml
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\Newtonsoft.Json.xml
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\LiveCharts.pdb
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\LiveCharts.xml
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\LiveCharts.Wpf.pdb
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\bin\Debug\LiveCharts.Wpf.xml
-D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\DemoPhucThinh.csproj.AssemblyReference.cache
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\GiamSatDucNhomApp.exe.config
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\frmLogin.g.cs
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\MainWindow.g.cs
@@ -185,3 +183,4 @@ D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\DemoPhucThinh.csproj.CopyComplete
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\GiamSatDucNhomApp.exe
 D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\GiamSatDucNhomApp.pdb
+D:\MyCompany\8.SourceCode\3.Projects\MrPhuocNhomTienDat\sourceCode\DemoPhucThinh\DemoPhucThinh\obj\Debug\DemoPhucThinh.csproj.AssemblyReference.cache
